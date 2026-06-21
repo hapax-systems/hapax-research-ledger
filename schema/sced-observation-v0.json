@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ryanklee/hapax-research-ledger/schema/sced-observation-v0.json",
+  "title": "SCED Observation (v0)",
+  "description": "A single changing-criterion single-case experimental design observation from the Hapax research program. Numeric/enum/controlled-vocabulary only; carries no free-text or personal data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "observation_id", "generated_at", "status", "n_observations", "phases", "provenance"],
+  "properties": {
+    "schema_version": {"const": "sced-observation/v0"},
+    "observation_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "experiment": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "dependent_variable": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "status": {"enum": ["dark-interim", "lit-collection", "adjudicated"]},
+    "n_observations": {"type": "integer", "minimum": 0},
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["criterion", "n", "released", "released_fraction"],
+        "properties": {
+          "criterion": {"type": "number"},
+          "n": {"type": "integer", "minimum": 0},
+          "released": {"type": "integer", "minimum": 0},
+          "released_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+          "mean_pre_gate": {"type": "number"}
+        }
+      }
+    },
+    "s2_composability": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["criterion", "attempts", "accepted", "rejected", "rejected_fraction"],
+        "properties": {
+          "criterion": {"type": "number"},
+          "attempts": {"type": "integer", "minimum": 0},
+          "accepted": {"type": "integer", "minimum": 0},
+          "rejected": {"type": "integer", "minimum": 0},
+          "rejected_fraction": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "axis_observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "axis_a": {"type": "integer", "minimum": 0},
+        "axis_b": {"type": "integer", "minimum": 0},
+        "dual_readout_complete": {"type": "integer", "minimum": 0}
+      }
+    },
+    "ruler_health": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "quarantined": {"type": "boolean"},
+        "ruler_substituted": {"type": "boolean"},
+        "served_substitutions": {"type": "integer", "minimum": 0},
+        "mean_pre_gate_basis": {"enum": ["canonical_ruler", "substituted_ruler"]},
+        "refused_no_release_rows": {"type": "integer", "minimum": 0}
+      }
+    },
+    "caveats": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "rdlc_stage", "record_sha256"],
+      "properties": {
+        "method": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "source": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "rdlc_stage": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+        "published_via": {"type": "string"},
+        "record_sha256": {"type": ["string", "null"]}
+      }
+    }
+  }
+}
