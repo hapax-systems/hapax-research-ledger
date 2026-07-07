@@ -8,6 +8,10 @@
 
 Public numeric-only SCED evidence ledger published from the first data point with caveats preserved.
 
+## Reader value
+
+Lets skeptical readers audit early observations, caveats, nulls, and scorer substitutions as data rather than reading them as polished product or research claims.
+
 ## Claim ceiling
 
 Evidence/baseline data only; no adjudicated research result unless validity gates explicitly clear.
@@ -39,7 +43,9 @@ Hapax research program.
 The ledger is deliberately narrow: append-only records, controlled
 vocabularies, hashes, caveats, and schema validation. It publishes observations
 early so baselines, nulls, substituted measurements, and validity blockers stay
-visible instead of being cleaned up after the fact.
+visible instead of being cleaned up after the fact. That makes it useful to
+skeptical readers precisely because it does not hide the weak or interim parts
+of a measurement series.
 
 ## Claim Ceiling
 
@@ -65,11 +71,11 @@ Important caveats:
 
 ## Files
 
-| File | Purpose |
-|---|---|
-| `dv-ledger.ndjson` | Append-only canonical observations. |
-| `latest.json` | Most recent observation, pretty-printed. |
-| `schema/sced-observation-v0.json` | JSON Schema for the record format. |
+| File | Purpose | Reader value |
+|---|---|---|
+| `dv-ledger.ndjson` | Append-only canonical observations. | Lets readers inspect the full sequence rather than only the latest point. |
+| `latest.json` | Most recent observation, pretty-printed. | Gives dashboards and humans a compact current pointer without replacing the ledger. |
+| `schema/sced-observation-v0.json` | JSON Schema for the record format. | Makes record shape, caveat fields, and validation expectations explicit. |
 
 Every public record is numeric, boolean, timestamp, hash, or controlled enum.
 No free-text personal data belongs in this ledger.
