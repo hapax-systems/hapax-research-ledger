@@ -8,6 +8,10 @@ This repository is part of the Hapax Systems portfolio. Public metadata, issue a
 
 Public numeric-only SCED evidence ledger published from the first data point with caveats preserved.
 
+## Reader value
+
+Lets skeptical readers audit early observations, caveats, nulls, and scorer substitutions as data rather than reading them as polished product or research claims.
+
 ## Claim ceiling
 
 Evidence/baseline data only; no adjudicated research result unless validity gates explicitly clear.
