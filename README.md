@@ -1,3 +1,36 @@
+<!-- hapax-sdlc:preamble:begin -->
+
+# hapax-research-ledger
+
+`hapax-research-ledger` is an evidence-artifact repository in the Hapax Systems portfolio. It publishes bounded observations or metadata, not runtime authority.
+
+## Reader promise
+
+Public numeric-only SCED evidence ledger published from the first data point with caveats preserved.
+
+## Claim ceiling
+
+Evidence/baseline data only; no adjudicated research result unless validity gates explicitly clear.
+
+## License and rights
+
+Public-domain data posture for the ledger only; does not license Hapax runtime code, Reins, or council internals.
+
+Rendered summary: CC0 1.0 (public-domain dedication for the declared data/artifact surface). See `LICENSE` for the authority surfaces.
+
+## Public boundary
+
+- Issues are redirect-only; no discussions, no pull requests accepted; see `CONTRIBUTING.md` and `SUPPORT.md`
+- Public copy must use `hapax-systems` organization links for first-party Hapax repositories.
+- Publication, weblog, RSS, social, DOI/archive, and other public fanout paths must route through the governed publication bus or a documented guarded legacy surface.
+- Governance reference: https://github.com/hapax-systems/hapax-constitution
+
+## Portfolio position
+
+Evidence/artifact output for public research and citation. Carries observations, not reusable runtime mechanisms.
+
+<!-- hapax-sdlc:preamble:end -->
+
 # hapax-research-ledger
 
 `hapax-research-ledger` is a public-domain numeric evidence ledger for the
@@ -26,8 +59,8 @@ Important caveats:
 
 - `status: dark-interim` means the observation is not an adjudicated claim.
 - Small `n` values should be read as early baseline data, not stable estimates.
-- `ruler_health.quarantined: true` means canonical scorers were quarantined and
-  backup measurements were substituted.
+- `ruler_health.quarantined: true` means the pipeline quarantined canonical
+  scorers and used backup measurements.
 - Baseline zeroes are baseline facts, not negative findings.
 
 ## Files

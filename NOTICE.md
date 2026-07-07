@@ -2,7 +2,7 @@
 
 `hapax-research-ledger` is an evidence-artifact repository in the Hapax Systems portfolio. It publishes bounded observations or metadata, not runtime code authority.
 
-This repository is part of the Hapax Systems portfolio. Public metadata, issue affordances, and support boundaries are governed by the registry in `hapax-constitution`.
+This repository is part of the Hapax Systems portfolio. Public metadata, issue affordances, and support boundaries follow the registry in `hapax-constitution`.
 
 ## Reader promise
 
