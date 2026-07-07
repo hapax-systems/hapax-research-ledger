@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this software in your research, please cite it as below.
+type: software
+title: hapax-research-ledger
+abstract: Public-domain numeric evidence ledger for the Hapax research program. Numeric
+  and evidence-oriented, not runtime code.
+authors:
+- name: Hapax Systems
+repository-code: https://github.com/hapax-systems/hapax-research-ledger
+url: https://github.com/hapax-systems/hapax-research-ledger
+license: CC0-1.0
+keywords:
+- research-software
+- evidence
+- research-data
