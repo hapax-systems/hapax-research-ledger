@@ -20,14 +20,14 @@
       "7_zero_consumer_oauth_tokens_or_secret_material": true,
       "8_zero_private_repo_404_urls_or_internal_codenames": true
     },
-    "status": "PASS"
+    "status": "HISTORICAL_PASS_NOT_REVALIDATED"
   },
   "drbst_strip": {
     "B_bound": "Zero warrant reduction (OUTCOME_1): authors' population bounds (experienced maintainers on mature >22k-star repos, early-2025 tools) and selection-bias refusal hold exactly",
     "D_evidence": "METR arXiv:2507.09089 within-developer ITT RCT (N=16, 246 issues, +19.0% slowdown vs -20.0% perceived) + 2026-02-24 non-compliance witness (-17.72% illusory speedup at 35% refusal)",
-    "R_orthogonal_review": "3 independent families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4)",
+    "R_orthogonal_review": "UNVERIFIED named-model assurance; historical claim: 3 independent families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); retained labels do not attest endpoint identity or family independence/exclusion. Correction: ../../review-records/ERRATUM-20261106.md",
     "S_system_consequence": "Developer self-reports (+39.0 pp inversion) and per-protocol voluntary cohorts cannot substitute for ITT randomized or encouragement designs",
-    "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c"
+    "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c; review assurance UNVERIFIED (2026-11-06)"
   },
   "epistemic_yield": {
     "do_witness_count": 2,
@@ -45,8 +45,8 @@
   "record_id": "HIEH-2026-0003",
   "record_type": "HIEH_PUBLIC_CLAIM_EXAMINATION",
   "release_date": "2026-11-06",
-  "release_state": "\u25c7 provisional",
+  "release_state": "\u25c7 provisional; named-model review assurance UNVERIFIED; substantive findings under revision/review (2026-11-06)",
   "schema_version": "U12-2.0",
   "series_expansion": "HAN-Initiated Epistemic Hardening (HIEH)",
-  "subject_vendor_family_excluded": "none_independent_nonprofit_metr"
+  "subject_vendor_family_excluded": "Historical policy assertion: none_independent_nonprofit_metr; served-model exclusion not independently attested"
 }

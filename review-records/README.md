@@ -1,3 +1,17 @@
+# Launch Slate 1 — review provenance correction index
+
+**2026-11-06:** Named-model review assurance is **UNVERIFIED**. Read the
+[canonical erratum](ERRATUM-20261106.md). Substantive findings remain under
+revision/review. The original 13 JSON files are preserved byte-for-byte.
+
+The Historical narrative below is retained for audit, **not current acceptance**.
+Its family-independence, exclusion, quorum and verification claims are historical
+assertions subject to the correction, not assurance for these changed bytes.
+
+<details>
+<summary>Historical narrative — superseded review assurance</summary>
+
+<!-- historical-review-narrative:start -->
 # Launch Slate 1 — Independent Multi-Lineage Review & Gate Records (`2026-11-06`)
 
 **Publisher:** `Hapax Research Lab` · `hrl-han` · `e-FORM` · `CC BY 4.0`  
@@ -58,3 +72,6 @@ All five final manuscripts were evaluated through `PublicationHardeningGate` (`6
 - `gate-receipt-68f1a4ce9.json` — Armed `PublicationHardeningGate` receipt over exact final manuscript `SHA-256` digests.
 - `p6-hostile-review-summary-round1.json` & `*-review-round1.json` — Complete Round-1 `P6` + adversarial seat transcripts (`27` calls).
 - `p6-hostile-review-summary-round2.json` & `*-review-round2.json` — Complete Round-2 `P6` + adversarial seat transcripts (`27` calls, `0` critical / `0` major).
+<!-- historical-review-narrative:end -->
+
+</details>

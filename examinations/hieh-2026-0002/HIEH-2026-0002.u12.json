@@ -20,14 +20,14 @@
       "7_zero_consumer_oauth_tokens_or_secret_material": true,
       "8_zero_private_repo_404_urls_or_internal_codenames": true
     },
-    "status": "PASS"
+    "status": "HISTORICAL_PASS_NOT_REVALIDATED"
   },
   "drbst_strip": {
     "B_bound": "Sustains OpenAI's empirical sting metrics; proves autonomous L0 linear probes yield 97.56% FDR (86.93% at 1% FPR) at 0.25% production prevalence",
     "D_evidence": "OpenAI Alignment 2026-11-04 paired sting decomposition (84.75% non-refusal, 79.32% unverbalized CoT) + Bayes PPV/FDR at 0.25% base rate",
-    "R_orthogonal_review": "3 non-OpenAI families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); OpenAI excluded",
+    "R_orthogonal_review": "UNVERIFIED named-model assurance; historical claim: 3 non-OpenAI families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); OpenAI excluded; retained labels do not attest endpoint identity or family independence/exclusion. Correction: ../../review-records/ERRATUM-20261106.md",
     "S_system_consequence": "Omit alarmist caution preambles (+50% drag); pair shadow diagnostics with cross-vendor quorums and out-of-workspace test custody",
-    "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c"
+    "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c; review assurance UNVERIFIED (2026-11-06)"
   },
   "epistemic_yield": {
     "do_witness_count": 1,
@@ -45,8 +45,8 @@
   "record_id": "HIEH-2026-0002",
   "record_type": "HIEH_PUBLIC_CLAIM_EXAMINATION",
   "release_date": "2026-11-06",
-  "release_state": "\u25c7 provisional",
+  "release_state": "\u25c7 provisional; named-model review assurance UNVERIFIED; substantive findings under revision/review (2026-11-06)",
   "schema_version": "U12-2.0",
   "series_expansion": "HAN-Initiated Epistemic Hardening (HIEH)",
-  "subject_vendor_family_excluded": "openai"
+  "subject_vendor_family_excluded": "Historical policy assertion: openai; served-model exclusion not independently attested"
 }
