@@ -1,0 +1,121 @@
+{
+  "accepting_families": 2,
+  "artifact": "HIEH-2026-0001.md",
+  "artifact_sha256": "a62a37865ebee82f209a699720acdb8521e4fcf714e1e85dc17eb3b580ca1929",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+      "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "latency_ms": 4893.51,
+        "rationale_one_sentence": "The paper's reported numbers are sustained, but the extrapolated headline claims are explained by non-stratum mechanisms: a forward-pass and parameter-scale protocol regime (0/4 static detection at 270M versus toy MLPs) and decoding-pathology ablation (the Exp 8a gain comes from removing a repetition seizure, with a +0.2 pp control in Exp 8b).",
+        "response_sha256": "689b962a3d2b5c22afb29bad6a3db73fdd8be7d0d19a2580df7098ca1a1e9e40",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "latency_ms": 9926.27,
+        "rationale_one_sentence": "The examination establishes that static zero-forward-pass weight inspection is bounded to toy MLPs (<= 171.7K parameters) and fails at the 270M-parameter transformer scale (0/4 recall), while the headline +40.2 pp MATH-500 improvement at the 0.8B scale is explained by a non-stratum mechanism: 25,600 forward-pass token evaluations guiding rank-1 ablation of a 32K-token repetition decoding pathology rather than static capability synthesis.",
+        "response_sha256": "f2a1d095097746b7f7a764958f188a0e31ef83de247adfb212009bf15fe676a0",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 7607.07,
+        "rationale_one_sentence": "The reported +40.2 pp MATH-500 gain is explained by 25,600 forward-pass evaluations ablating a rank-1 repetition seizure pathology rather than static weight-space synthesis, while static weight-only inspection fails completely at the 270M parameter scale.",
+        "response_sha256": "be308f7b4a3b70d5fbe3bc5104eced3e82c65e9b017183ff8a30f62be0779323",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "fix_first_families": 1,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept-with-dissent",
+  "record_id": "HIEH-2026-0001",
+  "seats": [
+    {
+      "critical_findings": [
+        "Mathematical error in Witness 2 step 3 and the reproducibility section. The manuscript computes 40.2/59.9 = 67.11% and calls it an 'implied conversion rate'. That figure is 67.11%, which is arithmetically fine, but the inference drawn from it is invalid. A +59.9 pp drop in loop rate is not a pool of 'newly rescued non-looping trajectories' that were then converted to correct answers. Looping and correctness are not shown to be a one-to-one mapping, and the paper's joint trajectory table is not reproduced. Accuracy gains could also come from previously non-looping items. The conclusion 'Qwen already possessed pre-trained competence' is stated as a verified fact (the text says 'refutes capability synthesis'). The decomposition has no counterfactual or paired data, so it is a causal overclaim. The text also labels this 'Pearl Rung 2' while using only marginal aggregates.",
+        "Statistical overclaim on Exp 7a. 0/4 is treated as proof that 'transformer residual superposition and cross-layer attention routing defeat static float inspection', which is a mechanistic claim with no support. Four trials give a Wilson 95% upper bound of about 49%, so the data are consistent with substantial recall. No interval is given. The 0/4 figure is also called '0.00% successful detections' and '0/4 recall' as though it were a precise ceiling. The text also gives 'Detected only after forward-pass...' for the active arm without citing any numbers.",
+        "Scale-confound and estimand conflation. The '1,572.5x scale discontinuity' compares toy MLPs with a transformer, so architecture, task and agent tooling are all confounded with parameter count. The text attributes the failure to scale. 'Every positive result above 200K requires forward passes' is also a tautology from the 200K axis chosen post hoc. The 7a arm and the 8a/8b models differ in architecture and baseline, so the claim that 8b is a 'decisive negative control' is overclaimed. The 8b pair is a different model with a 7% baseline, and a floor effect is an equally plausible explanation. The '+0.2 pp within binomial error' claim gives no N or test.",
+        "Scope-honesty defect. The 'What this does NOT establish' box says that 'every arithmetic witness sustains the paper's internal tables', yet the manuscript's own conclusions contradict the authors' framing and assert that capability synthesis is refuted. Several items are missing from the box: the reviewer never re-ran the experiments, the secondary claims being rebutted are never actually cited or identified, and the 0/4 sample size is a limitation. The text presents a verdict of OUTCOME_3 'sustained' with a firm 'Operational Consequence' ('cannot treat...') that goes beyond the evidence.",
+        "Hygiene: mandatory governance wording is not verbatim or is incomplete. The legal entity line reads 'Legal entity (as filed): Hapax Research LLC, organized in Wyoming on 2026-05-10, filing ID 2026-001973400', which may not match the required verbatim form. The release-record paragraph is not the required verbatim two-sentence check followed by a separate process-not-truth disclaimer; it is a multi-sentence blend. The correction text also adds extra statements about future automated replies, which makes the 'no instant SLA' commitment less clean."
+      ],
+      "hygiene_audit_summary": "No personal names, /home/ paths, internal hosts or [commercial-cta-path] CTAs were found. The provisional state, A16 attribution and the CC licenses are present. The correction-intake sentence is present verbatim, but the text adds extra SLA-adjacent statements. The legal-entity line and the two-sentence release-record plus disclaimer block are not clearly verbatim. Heavy unexpanded internal jargon remains.",
+      "input_tokens": 6647,
+      "latency_ms": 17506.58,
+      "major_findings": [
+        "The orthogonal review lists three model families with names that cannot be verified, and the text gives no findings, disagreements or raw-run evidence. The reader cannot assess how the review influenced the verdict.",
+        "Falsification deltas use arbitrary thresholds (80%, N>=20, +10 pp, rank<=8) with no power analysis or justification.",
+        "The steelman is brief and partly rhetorical. It frames the authors mostly as having 'documented the negative controls that bound over-broad commentary', which credits the authors for the reviewer's own argument.",
+        "Unexpanded internal jargon appears throughout: U12, D-H3, P6, A16, Kategoria v2.0, S+T, D+B, 'do-witness', 'Stage-1', 'slate1'. These are opaque to outside readers.",
+        "The text claims 'Exps 1-5 ... 0 forward passes' and attributes 'SVD and neuron tracing' without sourcing. Exp 6 is also missing from the eight-experiment table without explanation."
+      ],
+      "minor_notes": [
+        "Text says 'eight experiments' but the table covers Exps 1-5, 7a, 7b-less, 8a, 8b only.",
+        "Qwen3.5-0.8B is described as having 800,000,000 params, which is rounded, and 270M is rounded too, so '1,572.5x' implies false precision.",
+        "The 'Release Date' (2026-11-06) is only four days after the paper (2026-11-02), and the cold-reader check is still pending.",
+        "The 'A16' attribution is correct on CC BY 4.0 and CC0 1.0 with no (c) claim. A link to the 88 FR 16190 citation would help.",
+        "The phrase 'refutes capability synthesis' should be softened to 'is consistent with'."
+      ],
+      "output_tokens": 2151,
+      "reasoning_tokens": 0,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "2125b4816519a74bef7e6bd5ddf1257ef979528b05923fce8bf3047a76f38886",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "Arithmetic ratios check out (270M/171.7K = 1572.5; 40.2/59.9 = 67.1%). The inferential steps do not follow from them. No CIs, Wilson intervals, McNemar tests, paired data or sample sizes are given. 0/4 has a Wilson upper bound of roughly 49%. The loop-rate-to-accuracy 'conversion' is an unsupported ecological inference. The 8b control is confounded by model and floor effect. The causal claims (superposition defeats inspection; competence was masked) are overclaimed.",
+      "vendor": "anthropic",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All mandatory outward governance and OPSEC criteria pass: `\u25c7 provisional` release state is prominent; full `A16` attribution quartet (`Hapax Research Lab`, `hrl-han`, `e-FORM`, `CC BY 4.0` / `CC0 1.0`, zero copyright claim under `88 FR 16190`) is present; verbatim Wyoming legal-entity filing line (`2026-001973400`) is intact; `OpenAI` subject-lineage conflict exclusion is enforced; `What this does NOT establish:` and the `Takehi et al.` steelman are prominent, charitable, and non-mentalistic; correction intake includes the exact non-SLA commitment (`The network commits to receipt, retention and published correction. It promises no response time.`); the verbatim `hrl-han` outside release record check and process-not-truth disclaimer appear intact; and zero personal names, `/home/` paths, private URLs, or commercial CTAs leak.",
+      "input_tokens": 4772,
+      "latency_ms": 30006.1,
+      "major_findings": [],
+      "minor_notes": [
+        "In Beat 1 (`U12` Facet `R`) and `Reproducibility & Public Correction Intake`, internal process codes (`P6` raw-run hostile-reader check, `D-H3` privacy checks, and `U12` facets) appear with brief context but without full acronym expansion; expanding or parenthetically glossing these codes in future revisions would further harden outward legibility for cold external readers.",
+        "In Witness 2, the implied conversion rate (`40.2 / 59.9 = 67.11%`) implicitly assumes that pre-existing non-looping trajectories (`7.0%` baseline non-looping tail) experienced zero accuracy degradation after the rank-1 projection edit; while mathematically transparent as a net ratio of marginal deltas, noting that `67.11%` is the net marginal conversion rate across the rescued pool makes the ecological accounting explicit."
+      ],
+      "output_tokens": 852,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "f5d022c1ad61637eb0bc8399a31228143266f85603e2d6b8cdc3ca417948c004",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All arithmetic and protocol decompositions were independently verified: parameter-scale ratio `270,000,000 / 171,700 = 1,572.5102x` (rounds accurately to `1,572.5x`), `Exp 7a` static recall `0/4 = 0.00%`, forward-pass token evaluation budget `50 * 512 = 25,600`, `Exp 8a` `MATH-500` accuracy delta `48.1% - 7.9% = +40.2 pp`, repetition-loop delta `33.1% - 93.0% = -59.9 pp`, implied trajectory-rescue conversion `40.2 / 59.9 = 67.1119%` (`67.11%`), and `Exp 8b` control delta `7.0% - 6.8% = +0.2 pp` (for `N=500`, standard error of an unpaired difference is ~1.60 pp and way within binomial noise under any positive pairing correlation). Estimands are strictly separated between zero-forward-pass static weight reading and forward-pass activation-guided rank-1 ablation.",
+      "vendor": "google",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "Mandatory governance clauses present: \u25c7 provisional state, A16 attribution quartet (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0, zero copyright claim), Wyoming legal-entity filing line with ID 2026-001973400, honest correction intake verbatim ('The network commits to receipt, retention and published correction. It promises no response time.'), and the two-sentence hrl-han outside release record check plus process-not-truth disclaimer. No OPSEC leaks detected: no personal human names beyond public author citation, no /home/ paths, no internal hostnames/IPs, no hapax-council private URLs, no [commercial-cta-path] CTAs.",
+      "input_tokens": 4408,
+      "latency_ms": 31002.46,
+      "major_findings": [],
+      "minor_notes": [
+        "Unexpanded internal jargon: 'D-H3', 'P6', and 'Kategoria v2.0' appear without definition or expansion.",
+        "The assertion that Exp 8b's +0.2 pp is 'statistically indistinguishable from noise' is made without an explicit binomial test, p-value, or confidence interval; while plausible for MATH-500 (n=500), the statistical basis is not shown."
+      ],
+      "output_tokens": 490,
+      "reasoning_tokens": 4368,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "15650a2bbd0512aac0042e030b1d795bbb16ba9c57096d30c5fa4b9680650b30",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All arithmetic verified: 270,000,000 / 171,700 = 1,572.5x; 48.1 - 7.9 = +40.2 pp; 33.1 - 93.0 = -59.9 pp; 40.2 / 59.9 = 67.11%; 7.0 - 6.8 = +0.2 pp. No odds ratios, CMH tests, McNemar tests, Wilson intervals, or Bayesian calculations are present; estimands are not overclaimed beyond the provided algebraic decomposition.",
+      "vendor": "mistral",
+      "verdict": "accept-with-findings"
+    }
+  ]
+}

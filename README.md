@@ -79,6 +79,11 @@ Important caveats:
 | `latest.json` | Most recent observation, pretty-printed. | Gives dashboards and humans a compact current pointer without replacing the ledger. |
 | `schema/sced-observation-v0.json` | JSON Schema for the record format. | Makes record shape, caveat fields, and validation expectations explicit. |
 | `witnesses/` | Dated anonymous HTTP witness snapshots and commitment dispositions (`commitments-2026-11-06.json`). | Lets external auditors verify public commitment checks, response digests, and deadline-miss records independently. |
+| `publications/pub-2026-0001/` | Launch Slate 1 governance monograph (`PUB-2026-0001`), `CC0-1.0` datasets, and stdlib reproducer. | Lets readers re-run all Study 1 (`N = 1,535`) and Study 2 (`N = 960`) statistical assertions from sanitized raw records. |
+| `examinations/` | Launch Slate 1 `HIEH` public claim examinations (`HIEH-2026-0001..0004`), `1200x675` SVG plates, sidecars, and witness script. | Lets readers audit `Kategoria v2.0` outcome bounds, `25.00%` `OUTCOME_1` symmetry, and deterministic algebraic witnesses. |
+| `di-01-records/` | Discourse-restraint and conflict-of-interest records (`DI-01-LAUNCH-SLATE-1`). | Documents read-only social posture, vendor conflict exclusions, and arrival-retention commitments. |
+| `review-records/` | Two-round 3-family commercial API blind `P6` and adversarial review transcripts plus armed gate receipt. | Exposes Round-1 defect catches, Round-2 zero-critical/zero-major quorums, and conflict exclusions. |
+| `SHA256SUMS.txt` | Content-addressed `SHA-256` manifest for all Launch Slate 1 files. | Lets external verifiers check exact byte integrity across mirrors. |
 
 Every SCED observation in `dv-ledger.ndjson` is numeric, boolean, timestamp,
 hash, or controlled enum. No free-text personal data belongs in this repository.

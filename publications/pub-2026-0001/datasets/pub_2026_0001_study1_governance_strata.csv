@@ -1,0 +1,6 @@
+table,stratum,group_a,a_events,a_non_events,a_total,group_b,b_events,b_non_events,b_total
+post_2026_09_03_sec_file_strata,S_1_to_2_files,openai_gpt,5,45,50,anthropic_claude,1,43,44
+post_2026_09_03_sec_file_strata,M_3_to_6_files,openai_gpt,18,74,92,anthropic_claude,7,66,73
+post_2026_09_03_sec_file_strata,L_7_plus_files,openai_gpt,19,34,53,anthropic_claude,12,72,84
+paired_reviewer_mcnemar,all_paired_437,openai_blk_claude_acc,41,0,42,claude_blk_openai_acc,1,0,42
+glm_invalid_output,sec_vs_nonsec_632,sec,13,214,227,nonsec,6,399,405

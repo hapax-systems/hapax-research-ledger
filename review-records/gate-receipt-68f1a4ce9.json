@@ -1,0 +1,171 @@
+{
+  "documents": {
+    "HIEH-2026-0001.md": {
+      "aggregate_decision": "hold",
+      "children": {
+        "artifact_envelope": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "codebase": {
+          "decision": "hold",
+          "finding_count": 36
+        },
+        "known_entities": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "legal_name": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "lint": {
+          "decision": "hold",
+          "finding_count": 25
+        },
+        "review": {
+          "decision": "pass",
+          "finding_count": 1
+        }
+      },
+      "lint_error_count": 0,
+      "lint_errors": [],
+      "reject_child_count": 0,
+      "sha256": "b810c9d1d9e5523168231fec97845a2f8b01b0cddf676d505109a4918bc46271"
+    },
+    "HIEH-2026-0002.md": {
+      "aggregate_decision": "hold",
+      "children": {
+        "artifact_envelope": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "codebase": {
+          "decision": "hold",
+          "finding_count": 24
+        },
+        "known_entities": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "legal_name": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "lint": {
+          "decision": "hold",
+          "finding_count": 25
+        },
+        "review": {
+          "decision": "pass",
+          "finding_count": 1
+        }
+      },
+      "lint_error_count": 0,
+      "lint_errors": [],
+      "reject_child_count": 0,
+      "sha256": "c377c6e46d4a43f8b499710109bc077c0335b4dc2f190dba921c01d0c6110fa0"
+    },
+    "HIEH-2026-0003.md": {
+      "aggregate_decision": "hold",
+      "children": {
+        "artifact_envelope": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "codebase": {
+          "decision": "hold",
+          "finding_count": 9
+        },
+        "known_entities": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "legal_name": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "lint": {
+          "decision": "hold",
+          "finding_count": 26
+        },
+        "review": {
+          "decision": "pass",
+          "finding_count": 1
+        }
+      },
+      "lint_error_count": 0,
+      "lint_errors": [],
+      "reject_child_count": 0,
+      "sha256": "5e587b6710916085824dea882ace911ebe1711669a32337775a7f2dfc6052ee8"
+    },
+    "HIEH-2026-0004.md": {
+      "aggregate_decision": "hold",
+      "children": {
+        "artifact_envelope": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "codebase": {
+          "decision": "hold",
+          "finding_count": 3
+        },
+        "known_entities": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "legal_name": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "lint": {
+          "decision": "hold",
+          "finding_count": 26
+        },
+        "review": {
+          "decision": "pass",
+          "finding_count": 1
+        }
+      },
+      "lint_error_count": 0,
+      "lint_errors": [],
+      "reject_child_count": 0,
+      "sha256": "7302eb2587ab87691020bbfcafc1eee4e52fad8a8985bf6b66303be529dccf4e"
+    },
+    "PUB-2026-0001.md": {
+      "aggregate_decision": "hold",
+      "children": {
+        "codebase": {
+          "decision": "hold",
+          "finding_count": 45
+        },
+        "known_entities": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "legal_name": {
+          "decision": "pass",
+          "finding_count": 0
+        },
+        "lint": {
+          "decision": "hold",
+          "finding_count": 34
+        },
+        "review": {
+          "decision": "pass",
+          "finding_count": 1
+        }
+      },
+      "lint_error_count": 0,
+      "lint_errors": [],
+      "reject_child_count": 0,
+      "sha256": "af83c03dda62b643f2fb6e718bbe08993993a05149d5f3c7611dc98d61139b4c"
+    }
+  },
+  "executed_at_utc": "2026-11-06T02:23:50Z",
+  "gate_commit": "68f1a4ce9",
+  "operator_name_guard_armed": true,
+  "schema_version": "HRL-PUBLICATION-HARDENING-GATE-RECEIPT-20261106",
+  "zero_lint_errors_all_documents": true,
+  "zero_reject_children_all_documents": true
+}

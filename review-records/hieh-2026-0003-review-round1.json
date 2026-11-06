@@ -1,0 +1,117 @@
+{
+  "accepting_families": 2,
+  "artifact": "HIEH-2026-0003.md",
+  "artifact_sha256": "9f1c3f6ad32cf69d0b86cccd42179d503df81a3844d41cd9389477f3804d2df4",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 2719.13,
+        "rationale_one_sentence": "The examination reports zero methodological defects, zero rung demotions and zero warrant reduction, finding that METR's randomized ITT slowdown estimate and its 2026 non-compliance caution match the authors' own stated population, tool-vintage and selection bounds, with the algebraic witness confirming rather than narrowing the original claims (the 'sustained floor' control and the 'What this does NOT establish' scope note also point to a sustained verdict).",
+        "response_sha256": "381c9b60997d8e35152b8a2f862b5a5dce9033cd2ed82facae179e8c24cdd52d",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 6539.05,
+        "rationale_one_sentence": "Both METR's randomized ITT completion-time slowdown finding (+19.0% with a +39.0 pp perception inversion) and its 2026 non-compliance selection-bias caution (-17.72% spurious speedup at 35% selective refusal) are verified with zero rung demotions and hold within the exact population and tool-vintage boundaries stated by the original authors.",
+        "response_sha256": "5ae335d018e29a7425ffa28de0e84ed7ec35297658eee83115c900a594f1d4ca",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 5601.54,
+        "rationale_one_sentence": "The randomized ITT stopwatch estimand (+19.0% slowdown) and the 2026-02-24 selection-bias algebraic witness match the original authors' exact causal identification ceilings and explicitly stated population bounds (experienced maintainers on mature high-star repositories using early-2025 tools) without overclaiming universal effects.",
+        "response_sha256": "265e4bb1f631063d8959bd13741ac6f750fe09bbd52dfb262a85f8e740d293e6",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "fix_first_families": 1,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept-with-dissent",
+  "record_id": "HIEH-2026-0003",
+  "seats": [
+    {
+      "critical_findings": [
+        "Witness 2 algebra is internally inconsistent. The manuscript assumes the retained compliant control mean is 1.2154 while the AI-allowed arm has mean 1.00 under a 'true 0% effect'. It also says the AI arm has 'full compliance'. Yet it calls the 35% fast control tasks 'AI-amenable' and says developers refuse them. If fast tasks are dropped only from control, the AI arm still contains them, so the comparison is not selection-matched. The result, 1.00/1.2154 = 0.8228, is arithmetically correct (about -17.72%). However, it is a constructed counterexample that depends on the assumed 0.60 mean for the dropped tasks and on one-sided dropping. The text presents it as 'proven algebraically' and as 'vindicating' METR's 2026 decision. A toy model cannot vindicate a real-world decision, and it says nothing about METR's actual data. This is an estimand and overclaim problem.",
+        "The headline claims that METR is 'sustained as stated with zero warrant change' and has '0 methodological defects'. This is an overclaim: the 'Witness 1' check is arithmetic on METR's own reported numbers, not an audit of the trial's validity. Known limitations are not examined: N=16 developers, clustering of issues within developers, wide confidence intervals, self-reported time, and possible differential effort or scope-reduction across arms. No confidence intervals are reported anywhere, and the +19% figure is stated without uncertainty. The claim that the trial 'cleanly identifies' the effect is not supported by the manuscript's own checks.",
+        "The perception-inversion arithmetic conflates scales. Forecast -24% versus +19% is a gap of 43 pp, which is fine. But the 'perceived' -20% (0.80x) versus 1.19x gives a ratio of 1.4875 only as a ratio of multipliers. Describing this as '+48.75% longer than perceived' and as 'a 1.4875x stopwatch-to-perceived ratio' alongside pp gaps mixes estimands. The perceived estimate was also elicited as a counterfactual percentage, not as a measured multiplier.",
+        "The attributed '2026-02-24 update' details are unverified and possibly fabricated: '30%-50% selective resistance', a '2026 replication', and 'hostile commentary' that is not cited. The Evidence row cites truncated source hashes ('cf79aab0...') that cannot be checked. The artifact includes model names ('claude-sonnet-5-5', 'gemini-4-argon', 'mistral-large-4') and the 'witness script' SHA, none of which can be verified from the text.",
+        "Falsification Delta 2 is statistically wrong. High first-stage compliance does not by itself make LATE 'identifiable without per-protocol bias'. LATE requires exclusion and monotonicity, and it estimates the effect only for compliers. The 85% threshold is arbitrary and has no justification. Falsification Delta 1's 10 pp threshold is likewise arbitrary.",
+        "The mandatory release-record check is not verbatim as required. The two-sentence check is paraphrased and expanded into several sentences, and the process-not-truth disclaimer is merged into it. The text also refers to 'hrl-han's principal', which implies an unnamed human and may be an OPSEC concern."
+      ],
+      "hygiene_audit_summary": "The A16 attribution, provisional state, licenses, Wyoming filing ID, and correction-intake sentence are present. There are no /home/ paths, personal names, or internal hosts. Defects: the release-record check is paraphrased and merged with the disclaimer, there is a reference to an unnamed 'principal', and there is heavy unexpanded internal jargon (Kategoria, C9, U12, D-H3, P6, e-FORM).",
+      "input_tokens": 6323,
+      "latency_ms": 19438.02,
+      "major_findings": [
+        "The Release State line cites 'vendor-excluded three-family' review and 'blind P6 raw-run hostile-reader verification' with no description of how the models were blinded or how disagreements were handled. Several terms are unexpanded jargon: Kategoria v2.0, C9, U12, D-H3, P6, A16, e-FORM, and 'Pearl Rung 2 do-witnesses'.",
+        "The C9 'symmetry control' (1/4 = 25% >= 15%) is an opaque portfolio-level rule. It is presented as support for the verdict, but it has nothing to do with the validity of METR's claims.",
+        "The 'What this does NOT establish' box is partly defensive and mostly restates METR's own scoping. It omits limits of this audit: no re-analysis of raw METR data, an illustrative rather than empirical bias model, and no independent replication. The steelman section also asserts 'pre-registered', which needs a citation.",
+        "The claim that the examination is 'vendor-excluded' and has 'zero institutional authorship overlap' with METR is asserted but not evidenced. The Legal Entity line is not verbatim as specified ('Wyoming legal-entity filing line'); it adds 'organized in Wyoming on 2026-05-10', which may or may not match the required text.",
+        "The 'Randomized 1:1' and 'screen-recorded stopwatch' details, '246 issues', and '> 22,000 stars' are stated as facts without page-level citations. The tool description 'Cursor Pro with Claude 3.5/3.7 Sonnet' is unsourced."
+      ],
+      "minor_notes": [
+        "The release date 2026-11-06 appears alongside a 2026-02-24 'update', which should be sanity-checked.",
+        "The Falsification Delta text uses 'Z in {0,1}' notation without definition.",
+        "The artifact contains no ASCII dollar signs, no /home/ paths, no personal names, and no [commercial-cta-path] CTAs. The CC BY 4.0 / CC0 1.0 and 'zero copyright claim' wording is present. The intake commitment sentence 'The network commits to receipt, retention and published correction. It promises no response time.' is present verbatim.",
+        "The Wilson, McNemar, CMH, and Lincoln-Petersen checks named in the audit brief do not appear in the manuscript, so there is nothing to verify for them.",
+        "The two-sentence release check should be restored to verbatim form and kept separate from the process-not-truth disclaimer."
+      ],
+      "output_tokens": 2387,
+      "reasoning_tokens": 0,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "07f676d8950e1ebae4d125a5fba2a05ca1bdb3ba7d3b9d8376477aa6269b7ee6",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "The arithmetic checks out: 1.19/0.80 = 1.4875, 43 and 39 pp gaps, (1-0.21)/0.65 = 1.2154, and 1/1.2154 = 0.8228, or -17.72%. The weaknesses are conceptual. No confidence intervals are reported. The N=16 clustered design is not examined. The Manski-style counterexample is presented as proof and vindication, not as one illustrative scenario. The LATE claim is mis-stated. The thresholds are arbitrary, and 'zero defects' is an overclaim.",
+      "vendor": "anthropic",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All outward governance, epistemic fairness, and OPSEC hygiene checks pass: (1) Release state is explicitly marked provisional; (2) A16 attribution quartet is complete with CC BY 4.0 / CC0 1.0 licensing and zero copyright claim under 88 FR 16190; (3) Verbatim Wyoming legal-entity filing line (ID 2026-001973400) is present; (4) Honest correction intake clause ('The network commits to receipt, retention and published correction. It promises no response time.') and verbatim outside release record check + process-not-truth disclaimer are present; (5) Scope limitation block ('What this does NOT establish:') is prominent, charitable to METR, and devoid of anthropomorphic language; (6) Zero PII, local filesystem paths, internal hostnames, private URLs, or commercial CTAs were detected.",
+      "input_tokens": 4495,
+      "latency_ms": 28923.27,
+      "major_findings": [],
+      "minor_notes": [
+        "In Falsification Delta 2, the compliance differential threshold (>= 85%) is a useful pragmatic rule of thumb for bounding weak-instrument bias and finite-sample attrition amplification, though formal LATE identification under Imbens-Angrist additionally requires monotonicity (no defiers) and exclusion restriction."
+      ],
+      "output_tokens": 818,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "73ae9a872cf10a5af8d8f980799469105bfb73fcb3f46a20e6cf8036a4adc89d",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All arithmetic and causal-inference quantities are verified exact: (1) Witness 1 calibration inversions: +19.0% measured ITT slowdown (1.19x) minus -24.0% pre-task forecast (0.76x) yields +43.0 pp forecast error; +19.0% minus -20.0% post-task subjective estimate (0.80x) yields +39.0 pp perception inversion, with stopwatch-to-perceived multiplier ratio 1.19 / 0.80 = 1.4875x (+48.75%); expert forecast gap +19% minus (-38% to -39%) = +57 pp to +58 pp. (2) Witness 2 Manski/potential-outcomes selection-bias decomposition: under E[T(1)] = E[T(0)] = 1.00, alpha = 0.35 non-compliance on fast tasks with mean duration 0.60 implies compliant control expectation E[T(0) | compliant] = (1.00 - 0.35 * 0.60) / 0.65 = 0.79 / 0.65 = 1.2153846... (1.2154), producing an as-treated ratio of 1.00 / (0.79 / 0.65) = 0.65 / 0.79 = 0.8227848... (0.8228), or an illusory -17.72% speedup. (3) Portfolio symmetry share 1 / 4 = 25.00% >= 15.00% is exact. Estimands (ITT vs per-protocol/as-treated vs LATE) are clearly distinguished without conflation.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All mandatory governance clauses present and verbatim: \u25c7 provisional release state, A16 attribution quartet (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0/CC0 1.0, zero copyright claim per 88 FR 16190), Wyoming legal-entity filing line (2026-001973400), honest correction intake ('The network commits to receipt, retention and published correction. It promises no response time.'), and two-sentence hrl-han outside release record check with process-not-truth disclaimer. 'What this does NOT establish' block is prominent, comprehensive, and non-defensive. Zero OPSEC leaks detected: no personal human names/handles (Becker et al. is standard academic citation), no /home/ paths, internal hostnames/IPs, hapax-council private URLs, or [commercial-cta-path] CTAs. Examined METR authors steelmanned charitably; zero mentalistic/anthropomorphic intent attributed to AI models.",
+      "input_tokens": 4168,
+      "latency_ms": 26606.71,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 531,
+      "reasoning_tokens": 3077,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "e13fcffbf8d709379711368baab6213e84fb811787c50127cae0f502ae819406",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All quantitative claims verified as mathematically correct: +19.0% ITT stopwatch slowdown (1.19x multiplier), -24.0% pre-task forecast (0.76x), +43.0 pp forecast error, -20.0% post-task perception (0.80x), +39.0 pp perception inversion, and 1.4875x stopwatch-to-perceived ratio (1.19/0.80) are exact. Selection-bias witness algebra is sound: with 35% selective refusal of fast control tasks (mean 0.60) under 0% true effect, compliant control mean computes to (1.00-0.21)/0.65 = 1.2154, yielding naive as-treated ratio 1.00/1.2154 = 0.8228 (-17.72% illusory speedup). Estimands (ITT, per-protocol, LATE) are properly distinguished without conflation or overclaim.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

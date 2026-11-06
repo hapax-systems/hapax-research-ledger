@@ -1,0 +1,105 @@
+{
+  "accepting_families": 3,
+  "artifact": "HIEH-2026-0003.md",
+  "artifact_sha256": "5e587b6710916085824dea882ace911ebe1711669a32337775a7f2dfc6052ee8",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 2701.77,
+        "rationale_one_sentence": "The examination reports zero scope demotions, finds Becker et al.'s randomized ITT claims and stated bounds consistent with the arithmetic checks (+19% vs -20% belief gap), and finds METR's refusal to publish naive as-treated speedups sound under the attrition sensitivity model, so the original claims stand as written.",
+        "response_sha256": "eecb19c7ede0d0a3b61e6451e5e183556d845f18f0f0fb532a2e2fd555e0736f",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 3818.07,
+        "rationale_one_sentence": "The examination explicitly sustains both METR's randomized Intention-to-Treat slowdown estimate (+19.0% within author-stated population and tool-vintage bounds with zero scope or causal-level demotions) and METR's methodological refusal to report selection-confounded per-protocol uplift under one-sided control attrition.",
+        "response_sha256": "742de3ec8c6cae860a6e50e937d91f174c83794859910dab667b8b3716560126",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 4309.25,
+        "rationale_one_sentence": "The examination verifies that METR's randomized ITT estimate (+19.0% completion-time slowdown) and the 2026-02-24 selection-bias sensitivity algebra hold within the author-stated population and tool-vintage bounds with zero scope or causal-level demotions.",
+        "response_sha256": "d975d91cdcb38b13dc0640d2165aae37bfa005e8d641bdb97aa1b391c6601eef",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "fix_first_families": 0,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept",
+  "record_id": "HIEH-2026-0003",
+  "seats": [
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical strings are present verbatim: the legal entity string, the correction-intake string, the release-record string and the process disclaimer. The release state is '\u25c7 provisional'. Attribution names Hapax Research Lab, hrl-han and e-FORM with CC BY 4.0 / CC0 1.0 and no (c) claim. No personal names or handles, home paths, internal hostnames or IPs, or consulting CTAs were found. The organizational email and the GitHub URLs are acceptable. No mentalistic attribution to AI models appears. The examined authors are steelmanned charitably.",
+      "input_tokens": 7102,
+      "latency_ms": 15271.86,
+      "major_findings": [],
+      "minor_notes": [
+        "The 'What this does NOT establish' block is substantive but sits in the Executive Summary. Consider also noting that the 2026-02-24 METR update was read secondhand and that no raw METR 2026 data were examined. The block partly says this already.",
+        "The 'Primary Verdict' header calls the claim 'Sustained as stated (zero warrant change)'. Witness 2 is illustrative algebra, not evidence about METR's actual 2026 cohort. The text discloses this, but the verdict wording could say that the 2026 attrition part is supported only as a methodological principle.",
+        "In Witness 2, the 'naive per-protocol' comparison is described as retained AI-allowed (1.00) versus retained control (1.2154). This relies on the assumption that fast tasks drop only from the control arm. That assumption is stated, but the step could be labeled explicitly as an assumption.",
+        "The Falsification Criterion 2 heuristic 'first-stage F > 10' is a rule of thumb, not a requirement. A softer wording would be more accurate.",
+        "The 95% CI [+2%, +39%] is reported as approximate. It is probably asymmetric because of the log-scale estimation, so a short note on the scale of the CI would help.",
+        "The 'Primary Verdict' label 'Dual-Keyed' and the code 'U12 Schema' are opaque internal terms that are not expanded in the text. They are low risk because they link to the companion bundle."
+      ],
+      "output_tokens": 1193,
+      "reasoning_tokens": 820,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "87042a5f47016ecd500ccc0d5f56f75c6641b48938c3433445276dfc39a98961",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "All printed arithmetic checks out. 0.35*0.60=0.21 and (1-0.21)/0.65=1.2154. 1/1.2154=0.8228, an illusory speedup of -17.72%. The 1.19/0.80=1.4875 multiplier ratio is correct. The signed gaps are correct: -24 to +19 is 43 pp, -20 to +19 is 39 pp, and the expert -38/-39 to +19 gives 57/58 pp. The multipliers (0.76, 0.80, 1.19, about 0.61-0.62) are consistent with the percentages. The slate benchmark 1/4=25%>=15% is correct. The METR trial figures (N=16, 246 issues, +19% slowdown, CI about [2,39], >22k stars) match the published values. The estimand is correctly scoped as ITT / do(AI_allowed), and Witness 2 is clearly labeled as illustrative algebra, not an empirical fit. Additive percentage-point gaps are kept separate from the multiplier ratio. No overclaiming was found.",
+      "vendor": "anthropic",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance hygiene requirements are satisfied: provisional release state ('\u25c7 provisional'), complete machine-authored quartet attribution ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0' with zero copyright claim), exact Wyoming LLC legal-entity filing string, exact public correction-intake commitment string, exact autonomous release-record string, and exact process disclaimer string. The 'What this does NOT establish:' scope limitation callout is prominent and candid, examined authors (Becker et al. / METR) are steelmanned charitably, zero mentalistic intent is attributed to AI systems, and zero OPSEC or local path/hostname leaks are present.",
+      "input_tokens": 4944,
+      "latency_ms": 13606.65,
+      "major_findings": [],
+      "minor_notes": [
+        "In Witness 2, the potential-outcomes decomposition 1.00 = 0.35 * 0.60 + 0.65 * E[T(0) | retained] yields E[T(0) | retained] = 0.79 / 0.65 = 1.2153846... (rounded to 1.2154) and 1.00 / (0.79 / 0.65) = 0.65 / 0.79 = 0.8227848... (rounded to 0.8228, or -17.72% relative change). Both the exact unrounded ratio and the 4-decimal rounded intermediate produce -17.72%, which is internally consistent."
+      ],
+      "output_tokens": 781,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "52629cd3ec8e52796b9d7624d644be5eb4267fa66b8ae2990ff230d08598fdac",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All arithmetic, percentage-point differences, multiplier ratios, and potential-outcomes expectation decompositions were independently verified. Witness 1 properly distinguishes additive percentage-point differences on the signed percent-change scale (+19.0% - (-24.0%) = +43.0 pp; +19.0% - (-38% to -39%) = +57 pp to +58 pp; +19.0% - (-20.0%) = +39.0 pp) from the ratio of completion-time multipliers (1.19 / 0.80 = 1.4875x). Witness 2 accurately computes the conditional expectation under one-sided control-arm attrition: E[T(0) | retained] = (1.00 - 0.35 * 0.60) / 0.65 = 0.79 / 0.65 = 1.2154, yielding a naive per-protocol ratio of 1.00 / 1.215385 = 0.8228 (-17.72% illusory speedup under a 0.00% true ITT effect). Causal estimands (ITT vs. per-protocol vs. Imbens-Angrist LATE under monotonicity, exclusion restriction, and first-stage relevance) are rigorously scoped without overclaiming.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical governance strings present verbatim: \u25c7 provisional release state; attribution naming Hapax Research Lab, hrl-han, e-FORM with CC BY 4.0 / CC0 1.0 and zero copyright claim; exact legal-entity string (Hapax Research LLC, Wyoming, 2026-05-10, filing ID 2026-001973400); exact correction-intake commitment; exact release-record clause including hrl-han's principal reference; exact process disclaimer. 'What this does NOT establish' section is prominent and substantive. Steelman of METR/Becker et al. is charitable and accurate. Zero mentalistic intent attributed to AI systems. No OPSEC leaks detected: no personal human names/handles, no local paths, no internal hostnames/IPs, no commercial CTAs; all identifiers are public record IDs or published citations.",
+      "input_tokens": 4607,
+      "latency_ms": 11916.38,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 524,
+      "reasoning_tokens": 1686,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "6f01e576fc787b32e539a8366a0532cee4e1769a2af6bfabc3e43c9cebda9440",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All printed arithmetic verified internally consistent: slate benchmark 1/4 = 25.00% >= 15.00%; signed perception gap +19.0% - (-20.0%) = +39.0 pp; forecast gap +19.0% - (-24.0%) = +43.0 pp; multiplier ratio 1.19/0.80 = 1.4875x; Witness 2 attrition algebra 1.00 = 0.35*0.60 + 0.65*E[retained] yields E[retained] = (1.00-0.21)/0.65 = 1.2154, and naive ratio 1.00/1.2154 = 0.8228 implying -17.72% spurious speedup under 0.00% true ITT. Causal estimands correctly scoped to Pearl Level 2 within author-stated bounds (N=16, early-2025 tools, high-familiarity maintainers) with explicit finite-sample variance caveats; no overclaiming of universal effects.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

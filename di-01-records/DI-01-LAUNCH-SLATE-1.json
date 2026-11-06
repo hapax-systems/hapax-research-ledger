@@ -1,0 +1,22 @@
+{
+  "covered_records": [
+    "PUB-2026-0001",
+    "HIEH-2026-0001",
+    "HIEH-2026-0002",
+    "HIEH-2026-0003",
+    "HIEH-2026-0004"
+  ],
+  "eight_mandatory_fields": {
+    "1_target_discourse_surface": "Canonical archival publication in hapax-systems/hapax-research-ledger, hapaxresearch.com, and hapax.weblog.lol only.",
+    "2_hacker_news_and_social_posture": "STRICTLY_READ_ONLY_MONITORING (zero automated or manual HN submissions, zero unsolicited social replies, zero @-mentions).",
+    "3_examined_author_courtesy_rule": "At most 1 factual archival link notice permitted only if explicitly dispatched through governed sender-authenticated mail; 0 unsolicited follow-ups.",
+    "4_sequencing_horizon": "Convert-before-Divert/Deflate: PUB-2026-0001 (constructive empirical governance & open dataset) ships at T+0 alongside balanced 4-record HIEH slate (25.00% OUTCOME_1 sustained symmetry); minimum 14-day observation horizon before Slate #2.",
+    "5_conflict_of_interest_exclusions": "OpenAI models excluded from adjudicating PUB-2026-0001, HIEH-2026-0001, HIEH-2026-0002, and HIEH-2026-0004.",
+    "6_correction_intake_commitment": "Durable arrival retention at hrl-han@hapaxresearch.com and GitHub issues; automated SEEN replies gated on #5670/#5038 activation; zero response-time SLA.",
+    "7_stopping_rule": "Immediate halt of external distribution if any substantiated factual error or Axiom 88/90 hygiene regression is filed until signed errata diff lands on main.",
+    "8_anti_engagement_farming_lock": "Zero commercial consulting call-to-action (C-384), zero leaderboard scoring of individuals, zero mentalistic attribution."
+  },
+  "legal_entity": "Legal entity (as filed): Hapax Research LLC, organized in Wyoming on 2026-05-10, filing ID 2026-001973400",
+  "record_id": "DI-01-LAUNCH-SLATE-1-20261106",
+  "schema_version": "DI-01-F-CONST-13-v1"
+}

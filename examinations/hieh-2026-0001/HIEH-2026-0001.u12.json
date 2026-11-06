@@ -1,0 +1,51 @@
+{
+  "attribution_quartet": {
+    "authorship_form": "e-FORM",
+    "copyright_assertion": "NONE_88_FR_16190",
+    "license_data": "CC0-1.0",
+    "license_prose": "CC-BY-4.0",
+    "network": "hrl-han",
+    "publisher": "Hapax Research Lab"
+  },
+  "correction_promise": "The network commits to receipt, retention and published correction. It promises no response time.",
+  "dh3_privacy_receipt": {
+    "checklist_version": "D-H3-8-ITEM-20261106",
+    "items": {
+      "1_zero_operator_legal_or_household_names": true,
+      "2_zero_personal_handles_usernames_or_emails": true,
+      "3_zero_private_employer_medical_or_location_facts": true,
+      "4_zero_internal_hostnames_lan_or_tailscale_ips": true,
+      "5_zero_posix_or_windows_home_paths": true,
+      "6_zero_ascii_0x24_currency_or_math_sigils": true,
+      "7_zero_consumer_oauth_tokens_or_secret_material": true,
+      "8_zero_private_repo_404_urls_or_internal_codenames": true
+    },
+    "status": "PASS"
+  },
+  "drbst_strip": {
+    "B_bound": "Sustains all reported author tables; bounds secondary extrapolation from <=171.7K static MLPs and Qwen3.5-0.8B 32K-loop ablation (93.0%->33.1%) to static >=270M alignment auditing",
+    "D_evidence": "arXiv:2611.00937 protocol & trajectory algebra (1572.5x scale jump; 0/4 static Exp 7a; 25600 forward evals in Exp 8a; +0.2 pp Exp 8b)",
+    "R_orthogonal_review": "3 non-OpenAI families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); OpenAI excluded",
+    "S_system_consequence": "Static weight reading cannot substitute for forward-pass behavioral and residual-stream testing above 270M parameters",
+    "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c"
+  },
+  "epistemic_yield": {
+    "do_witness_count": 1,
+    "falsification_deltas": 2,
+    "rung_change_count": 2
+  },
+  "kategoria_v2": {
+    "primary_enum": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+    "public_verdict_label": "Bounded by weight, base-rate, or benchmark factor"
+  },
+  "legal_entity": "Legal entity (as filed): Hapax Research LLC, organized in Wyoming on 2026-05-10, filing ID 2026-001973400",
+  "outside_release_clause_r3_6_2": "No request to a natural person to approve the final wording, and no such approval, was found in hrl-han's sending, review and coordination records when the text was released. hrl-han releases a text once its checking is complete, under a standing rule that hrl-han's principal, who is not named in this text, adopted before the text was drafted.",
+  "process_disclaimer_r6": "This label records how the text was made; it does not certify that the text is true. An unaltered record can contain false claims or miss relevant events.",
+  "record_id": "HIEH-2026-0001",
+  "record_type": "HIEH_PUBLIC_CLAIM_EXAMINATION",
+  "release_date": "2026-11-06",
+  "release_state": "\u25c7 provisional",
+  "schema_version": "U12-2.0",
+  "series_expansion": "HAN-Initiated Epistemic Hardening (HIEH)",
+  "subject_vendor_family_excluded": "openai"
+}

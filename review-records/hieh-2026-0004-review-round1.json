@@ -1,0 +1,139 @@
+{
+  "accepting_families": 0,
+  "artifact": "HIEH-2026-0004.md",
+  "artifact_sha256": "2fc62fc82cc3181af45221526917c971da02c53c7e73475982ec588d2bd73ec1",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_5_UNDERDETERMINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 2478.84,
+        "rationale_one_sentence": "The disclosed 40% drop in classified views couples true prevalence, classifier TPR/FPR, and impression volume in one equation with six unknowns, so the algebraic counterexamples (a genuine -40%, a 0% change from FPR recalibration, and a +20% rise from evasion) cannot be separated from public warrant alone, which fits UNDERDETERMINED.",
+        "response_sha256": "1b8f0ec7e981f44c6b2040ac4a9bf4162eb585703004735f4aa1ee294d0ae983",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 5968.47,
+        "rationale_one_sentence": "The reported 40% reduction in classified AI-slop views couples true prevalence with undisclosed classifier sensitivity (TPR), false-positive rate (FPR), and impression denominators in a single scalar equation, making it mathematically impossible to distinguish genuine exposure reduction from classifier threshold recalibration or creator evasion.",
+        "response_sha256": "6ee14f07235e6c0c39c8a427e4e77ef515d4a09a8d4b27ea17cb0fcdb9c0209f",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 5142.43,
+        "rationale_one_sentence": "The disclosed 40% reduction in classifier-flagged views is observationally equivalent to true exposure changes ranging from -40% to +20% because the public warrant omits classifier TPR/FPR and true prevalence parameters, rendering the true causal effect on user exposure mathematically indeterminate.",
+        "response_sha256": "8d7b791fc811a2c4febcb63cd362cd12ea478ca57f9acd8ce7b593d1622b06db",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "fix_first_families": 3,
+  "openai_excluded": true,
+  "quorum_verdict": "fix-first-required",
+  "record_id": "HIEH-2026-0004",
+  "seats": [
+    {
+      "critical_findings": [
+        "Scenario C arithmetic is wrong. With p 5%->6%, TPR 80%->40%, FPR 1%: C0 = 0.05*0.8 + 0.95*0.01 = 0.0495 (correct). C1 = 0.06*0.4 + 0.94*0.01 = 0.024 + 0.0094 = 0.0334 (correct). The ratio is 0.0334/0.0495 = 0.6747, a -32.53% change, not the stated -30.91%. The headline figure is wrong. It also does not equal -40%, so Scenario C is not observationally equivalent to the reported -40% as the text claims ('total observational equivalence').",
+        "Scenario B does not produce a -40% drop. It gives -39.18% (0.0590/0.0970 = 0.6082), which is close to but not equal to the reported -40%. Scenario C gives about -32.5%. Only Scenario A gives exactly -40%. The 'single scalar equation' and 'total observational equivalence' claims are therefore overstated unless the parameters are tuned to hit exactly 0.60. The 0.00% true-exposure claim in Scenario B is also loosely defined. The text moves between the Proposition's '-40.0% drop admits ... 0.00% true reduction' and the -39.18% actually computed.",
+        "The Proposition says the worked example 'admits' a 0.00% true reduction at -40%, but the quoted counterexample is -39.18%, so it does not show exact equivalence. The text also states that identifiability fails, but the 'six unknowns' count omits V ratio. The 'Upgrade to OUTCOME_1 or 2' claim is also unsupported, because four numbers are listed but the confusion matrix needs several parameters, not one.",
+        "The mandatory release-record two-sentence check is not verbatim as a clean pair. The text has several sentences and extra clauses, including a third and fourth sentence that mix in the process-not-truth disclaimer. A strict verbatim check cannot be confirmed. The `(c)`-free A16 line is present, but the 'Legal entity' line is not formatted in the canonical verbatim style ('Legal entity (as filed): ...' with the 2026-001973400 filing ID); confirm it matches the canonical string exactly."
+      ],
+      "hygiene_audit_summary": "Present: the provisional state, the A16 quartet, CC BY 4.0 / CC0 1.0, no (c) claim, the Wyoming filing ID, and the correction-intake sentences, which promise no response time. The release-record paragraph is not clearly the canonical two-sentence form and carries extra sentences. No personal names, /home/ paths, internal hosts or [commercial-cta-path] CTAs were found. Jargon is unexpanded in places. No anthropomorphic intent is attributed to models.",
+      "input_tokens": 6012,
+      "latency_ms": 15808.33,
+      "major_findings": [
+        "The 'Pearl Rung 1' label and the claim of '0 rung changes, 1 do-witness counterexample' mix levels. A do-witness belongs to rung 2, so the rung claim is confused.",
+        "The Operational Consequence recommends N>=1,000 stratified impressions with no power calculation. At 5% prevalence, a 1,000-impression sample gives roughly 50 positives, which is too few to estimate TPR precisely. No Wilson intervals are given, and none are justified.",
+        "The steelman asserts as fact that 'large social platforms routinely track classifier-weighted impression volume' and that LinkedIn's post is an 'engineering and product communication' with no support. The manuscript does not verify that this is how LinkedIn's metric is defined, and the 'organizational product post' versus 'engineering blog' description is inconsistent.",
+        "The model names (claude-sonnet-5-5, gemini-4-argon, mistral-large-4) and the dated 2026 events cannot be verified. The reviewer-panel claim rests on them.",
+        "The 'What this does NOT establish' box is a single block and is partly defensive. It omits the limits that the quote was not examined in full context, that the actual classifier is unknown, that the scenarios are illustrative rather than empirical, and that there is no evidence about LinkedIn's real parameters."
+      ],
+      "minor_notes": [
+        "Dates are inconsistent: the title says 2026-09-15 and the release date is 2026-11-06. Make sure the gap is intended.",
+        "Jargon is not expanded on first use: U12, D-H3, P6, Kategoria v2.0, S+T, D+B, HAN, e-FORM.",
+        "The `88 FR 16190` citation and the `mathematical unidentified` wording should be checked.",
+        "Scenario A shows FPR 0%->0%, which is unrealistic and should be noted as illustrative.",
+        "The 'Goodhart's law' attribution of intent to creators is fine, but 'adversarial evasion' is speculative."
+      ],
+      "output_tokens": 1910,
+      "reasoning_tokens": 0,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "e5d9ca581bc6106ab5c1f6fdd9c0ced087bcefa0d76e1a142c453fb0018fa024",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "Scenario A is correct (0.040->0.024, -40%). Scenario B is arithmetically correct (0.0970->0.0590, -39.18%) but is not exactly -40%. Scenario C contains an error: the post value 0.0334 is right, but the percentage change is -32.53%, not -30.91%. The true-exposure change of +20% (0.05->0.06) is correct. The 'total observational equivalence' framing is overclaimed because scenarios B and C do not hit the 0.60 ratio. No CMH, McNemar or Wilson procedures are used. The sample-size recommendation is unjustified, and the Pearl-rung labelling is inconsistent.",
+      "vendor": "anthropic",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [
+        {
+          "category": "Biostatistical & Mathematical Validity",
+          "description": "Arithmetic mismatch in Scenario C classified-view change. With p_0 = 0.05, TPR_0 = 0.80, FPR_0 = 0.01, baseline classified share is C_0 / V_0 = 0.05 * 0.80 + 0.95 * 0.01 = 0.0495. With p_1 = 0.06, TPR_1 = 0.40, FPR_1 = 0.01, post-period classified share is C_1 / V_1 = 0.06 * 0.40 + 0.94 * 0.01 = 0.0334. The relative change from 0.0495 to 0.0334 is (0.0334 - 0.0495) / 0.0495 = -0.0161 / 0.0495 = -32.53% (-32.5252...%), NOT -30.91%. (Note: -30.91% corresponds to a baseline of 0.0550 to 0.0380, i.e., FPR = 1.58%, or a different parameterization). The table and prose state '-30.91% (0.0495 -> 0.0334)', which is mathematically inconsistent.",
+          "id": "CF-1",
+          "location": "Deterministic Identifiability & Witness Verification -> Witness 1 -> Scenario C table row and accompanying prose"
+        }
+      ],
+      "hygiene_audit_summary": "All mandatory outward governance elements are present and exact: provisional state ('\u25c7 provisional'), A16 attribution quartet ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0', zero copyright claim under 88 FR 16190), verbatim Wyoming legal-entity filing line ('2026-001973400'), honest correction intake clause ('The network commits to receipt, retention and published correction. It promises no response time.'), and verbatim two-sentence outside release record check + process-not-truth disclaimer. Zero personal names, local filesystem paths, internal IPs, or commercial CTAs were found. Three unexpanded internal shorthand codes ('U12', 'P6', 'D-H3') should be expanded or defined inline before release.",
+      "input_tokens": 4239,
+      "latency_ms": 26332.96,
+      "major_findings": [
+        {
+          "category": "Zero OPSEC / House-Lore / Formatting Leaks",
+          "description": "Unexpanded internal house-lore/jargon codes appear without plain-English explanation: 'U12 Facet', 'blind P6 raw-run hostile-reader verification', and 'D-H3 privacy checks'. External readers cannot interpret 'U12', 'P6', or 'D-H3' without inline expansion.",
+          "id": "MF-1",
+          "location": "Beat 1 (U12 Facet table) and Reproducibility & Public Correction Intake"
+        }
+      ],
+      "minor_notes": [
+        {
+          "category": "Biostatistical & Mathematical Validity",
+          "description": "Scenario A and Scenario B arithmetic are exact: Scenario A (0.040 -> 0.024 is -40.00%); Scenario B (0.0970 -> 0.0590 is -0.0380 / 0.0970 = -39.1753% -> -39.18%). Moreover, an exact -40.00% drop with 0.00% true prevalence change can also be shown trivially (e.g., FPR_0 = 6.0% -> FPR_1 = 1.9158%, or TPR_0 = 80% -> 80%, p = 5%, FPR_0 = 10.526% -> 4.211%), though -39.18% with round percentages is pedagogically clear once Scenario C is corrected.",
+          "id": "MN-1",
+          "location": "Beat 1 and Witness 1"
+        }
+      ],
+      "output_tokens": 1283,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "918a117ca8c8d6d84935e8ca8cbcb4ab180c684ef650cf091451b5bf6535c1e8",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "The mixture-identifiability equation C_t = V_t * [p_t * TPR_t + (1 - p_t) * FPR_t] is algebraically sound and properly scopes the claim to OUTCOME_5_UNDERDETERMINED. Scenario A (-40.00%, 0.040 -> 0.024) and Scenario B (-39.18%, 0.0970 -> 0.0590) verify exactly. However, Scenario C contains a direct calculation error: the relative change from 0.0495 to 0.0334 is -32.53%, not -30.91%. This requires correction in both the manuscript table/prose and, if applicable, the witness script.",
+      "vendor": "google",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [
+        "Scenario C arithmetic is internally inconsistent: with p 0.05->0.06, TPR 0.80->0.40, FPR 0.01->0.01, the stated classified-view values C 0.0495->0.0334 imply a change of (0.0334-0.0495)/0.0495 = -32.53%, not the printed -30.91% (which would require C_1 = 0.0342). The +20.00% true-exposure change is correct, but the headline classified-view delta in both the table and the prose is a factual/math error and must be repaired before release."
+      ],
+      "hygiene_audit_summary": "All mandatory governance elements are present and verbatim where required: \u25c7 provisional release state; A16 quartet (Hapax Research Lab / hrl-han / e-FORM) with CC BY 4.0 (prose/SVG) and CC0 1.0 (JSON) plus zero copyright claim; Wyoming legal-entity line with filing ID 2026-001973400; honest correction intake including 'The network commits to receipt, retention and published correction. It promises no response time.'; and the two-sentence hrl-han outside release-record check plus process-not-truth disclaimer. No personal human names/handles, /home/ paths, hostnames/IPs, hapax-council private URLs, or [commercial-cta-path] CTAs detected; the only contact is the network's public intake address and public GitHub ledger links.",
+      "input_tokens": 3973,
+      "latency_ms": 31807.46,
+      "major_findings": [],
+      "minor_notes": [
+        "Internal facet labels (U12, L0/L1, P6, D-H3, A16, S1-S3, Kategoria v2.0, OUTCOME_5_UNDERDETERMINED) are dense but each is expanded inline at first use; acceptable for a provisional archival record.",
+        "The 'single scalar equation in six unknowns' identifiability framing is correct under the stated V_1 = V_0 assumption and is not overclaimed."
+      ],
+      "output_tokens": 693,
+      "reasoning_tokens": 4465,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "4d2a4b4ae8bd33cafcef89ff9e3bce940ef67047abe6b9c2b47c2a1a9426adc4",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "Verified the mixture estimand C_t = V_t*[p_t*TPR_t + (1-p_t)*FPR_t], the 15-word quote count, Scenario A (-40.00% classified and -40.00% true), and Scenario B (C 0.0970->0.0590 = -39.18% classified with 0.00% true change) \u2014 all arithmetically correct. The six-unknown underidentification claim is valid. Scenario C is the sole math defect: printed -30.91% contradicts its own parameters, which yield -32.53%. No estimand conflation detected; OUTCOME_5_UNDERDETERMINED is appropriately scoped and not overclaimed.",
+      "vendor": "mistral",
+      "verdict": "fix-first"
+    }
+  ]
+}
