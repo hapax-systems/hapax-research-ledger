@@ -25,7 +25,7 @@
   "drbst_strip": {
     "B_bound": "Study 1 CMH p=0.000443 is post-Sep-03 cross-lineage divergence from OR_pre=1.064 (2-period sec ROR=2.335, p=0.1026); Study 2 omits OpenAI, measures single-turn CDE (MDE_80=4.95 pp), and resolves mistral +7.50 pp as max_tokens=4096 synthesis truncation (172/172 synthesis code pass; 80/80 audit pass)",
     "D_evidence": "Study 1 N=1535 PR dossiers (4685 seat reviews, Pearl Rung 1) + Study 2 N=320 prompts x 3 commercial paid APIs = 960 calls (Pearl Rung 2 do(framing))",
-    "R_orthogonal_review": "UNVERIFIED named-model assurance; historical claim: 3 non-OpenAI families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); OpenAI excluded; retained labels do not attest endpoint identity or family independence/exclusion. Correction: ../../review-records/ERRATUM-20261106.md",
+    "R_orthogonal_review": "UNVERIFIED; historical review claim: 3 non-OpenAI families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); OpenAI excluded; provenance correction: ../../review-records/ERRATUM-20261106.md",
     "S_system_consequence": "2-of-3 cross-vendor API quorum achieves 40/40 (100.00%, Wilson LB95=91.24%) audit accuracy and eliminates solo false blocks",
     "T_temporal_state": "\u25c7 provisional; reproducer SHA256 01d8790cb232859d8ae57dff967e56e2f94e5e5c5996c0db33cab973beadb7f7; review assurance UNVERIFIED (2026-11-06)"
   },

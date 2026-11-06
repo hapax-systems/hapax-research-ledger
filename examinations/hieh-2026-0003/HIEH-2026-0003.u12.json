@@ -25,7 +25,7 @@
   "drbst_strip": {
     "B_bound": "Zero warrant reduction (OUTCOME_1): authors' population bounds (experienced maintainers on mature >22k-star repos, early-2025 tools) and selection-bias refusal hold exactly",
     "D_evidence": "METR arXiv:2507.09089 within-developer ITT RCT (N=16, 246 issues, +19.0% slowdown vs -20.0% perceived) + 2026-02-24 non-compliance witness (-17.72% illusory speedup at 35% refusal)",
-    "R_orthogonal_review": "UNVERIFIED named-model assurance; historical claim: 3 independent families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); retained labels do not attest endpoint identity or family independence/exclusion. Correction: ../../review-records/ERRATUM-20261106.md",
+    "R_orthogonal_review": "UNVERIFIED; historical review claim: 3 independent families (anthropic/claude-sonnet-5-5, google/gemini-4-argon, mistral/mistral-large-4); provenance correction: ../../review-records/ERRATUM-20261106.md",
     "S_system_consequence": "Developer self-reports (+39.0 pp inversion) and per-protocol voluntary cohorts cannot substitute for ITT randomized or encouragement designs",
     "T_temporal_state": "\u25c7 provisional; witness SHA256 585bdaf333a09d0b111d9753bafd55d7c481121adfa39eeeb1c1810d5edf088c; review assurance UNVERIFIED (2026-11-06)"
   },
