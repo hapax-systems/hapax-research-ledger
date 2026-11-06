@@ -1,0 +1,100 @@
+{
+  "accepting_families": 3,
+  "artifact": "HIEH-2026-0004.md",
+  "artifact_sha256": "7302eb2587ab87691020bbfcafc1eee4e52fad8a8985bf6b66303be529dccf4e",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_5_UNDERDETERMINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 2708.7,
+        "rationale_one_sentence": "The public 40% drop in classified views couples true prevalence, TPR, FPR and volume, so algebraic counterexamples (a 0% true change from FPR recalibration, or a +20% true rise from sensitivity drift) fit the disclosure equally well and the true exposure change cannot be identified from public warrant alone.",
+        "response_sha256": "c14d90dcd3107d08a0393a402e9c1ef9a0de2ed71b872ebf9be73b6a3f12048e",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 4774.92,
+        "rationale_one_sentence": "The publicly disclosed 40% reduction in classified views couples true prevalence with uncalibrated classifier sensitivity, false-positive rates, and total feed volume in a single scalar equation, making the true change in user exposure mathematically unidentifiable from public data alone.",
+        "response_sha256": "977210ee95f1a17ee69c021c6097b0ca00d9fde7df91eabdfc31f06d63fbf058",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 4427.76,
+        "rationale_one_sentence": "The disclosed -40% classified-view statistic is a single scalar equation coupling unidentified classifier sensitivity, false-positive rate, true prevalence, and feed volume, so true user-exposure change cannot be determined from the public warrant alone.",
+        "response_sha256": "b3da8a3e519a12ae2a2b48ea4dae04184f9ca923836838342157248f7440f218",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "fix_first_families": 0,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept",
+  "record_id": "HIEH-2026-0004",
+  "seats": [
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "The manuscript carries the '\u25c7 provisional' release state. Attribution names Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 and CC0 1.0, with no (c) claim. The legal-entity string, the correction-intake string, the release-record string and the process disclaimer are all present verbatim. The 'What this does NOT establish' block is prominent and candid, and the steelman of LinkedIn is charitable. No mentalistic intent is attributed to AI models. I found no personal names or handles, no local paths, no internal hosts or IPs, and no commercial calls to action. The email address and GitHub URLs are organizational and public.",
+      "input_tokens": 7087,
+      "latency_ms": 14195.54,
+      "major_findings": [],
+      "minor_notes": [
+        "The 'Evidence & Causal Level' cell lists '0 causal-level shifts, 1 algebraic mixture counterexample, 2 prospective falsification/upgrade criteria'. These counts are opaque, and the manuscript has two counterexample families (B and C) rather than one. A short gloss would help.",
+        "The summary says 'true low-value synthetic exposure changes by 0.00%' for the FPR scenario. It could say 'in the illustrative scenario' to match the scoping used in the NOT-establish box.",
+        "The Wilson half-width bound of below 5 pp at n_pos >= 400 holds (about 4.8 pp at TPR = 0.5). Stating that the figure is the worst-case value would make this easier to check."
+      ],
+      "output_tokens": 1085,
+      "reasoning_tokens": 958,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "f953e56162e79277d8da1fd1dcee63607b631b5b5a6af56d6d3b2e11b29993f6",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "I recomputed every printed figure and all agree. The quote has 15 words. Scenario A: 0.05*0.80 = 0.040 and 0.03*0.80 = 0.024, a -40% classified change that matches the -40% true change. Scenario B1: 0.040 + 0.95*0.06 = 0.0970 and 0.040 + 0.95*0.02 = 0.0590, and 0.059/0.097 = 0.6082, so -39.18%. Scenario B2: FPR_1 = 0.0182/0.95 = 1.9158% gives 0.0582, and 0.0582/0.097 = 0.600 exactly. Scenario C1: 0.0495 falls to 0.024 + 0.0094 = 0.0334, a -32.53% change, while true exposure rises from 5% to 6%, which is +20%. Scenario C2: TPR_1 = 0.0203/0.06 = 33.83% gives 0.0297, which is -40% exactly. The parameter count is correct: seven quantities, or six when V is constant. The Wilson worst-case bound at n_pos = 400 is about 4.8 pp, which is below 5 pp. The estimand is correctly scoped as an algebraic identifiability result, and the manuscript makes no empirical or causal claim about LinkedIn's actual feed. The Pearl Level 1 labelling is appropriate.",
+      "vendor": "anthropic",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance hygiene requirements are satisfied verbatim: the provisional release state ('\u25c7 provisional'), the machine-authored attribution quartet ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0' with zero copyright claim), the exact Wyoming legal-entity string, the exact correction-intake string, the exact release-record string, and the exact process-disclaimer string are all present. Epistemic fairness is exemplary, featuring a prominent 'What this does NOT establish:' block and a charitable steelman of LinkedIn's phrasing, with zero anthropomorphic language, zero OPSEC or local path leaks, and zero commercial CTAs.",
+      "input_tokens": 5174,
+      "latency_ms": 11183.05,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 941,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "26bc07456a2ed56d5ed21458000a0f14f3a4032aaf0f874d307c1c97871ac361",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All mixture-equation calculations and algebraic counterexamples were independently verified. Under constant volume V_1 = V_0, classified share is C_t / V_t = p_t * TPR_t + (1 - p_t) * FPR_t. In Scenario A, 0.05 * 0.80 = 0.0400 and 0.03 * 0.80 = 0.0240, giving an exact -40.00% relative change alongside a -40.00% true prevalence reduction. In Scenario B1, 0.05 * 0.80 + 0.95 * 0.06 = 0.0970 and 0.05 * 0.80 + 0.95 * 0.02 = 0.0590, yielding (0.0590 - 0.0970) / 0.0970 = -39.175% (-39.18% rounded) with 0.00% true exposure change; in Scenario B2, solving 0.04 + 0.95 * FPR_1 = 0.60 * 0.0970 = 0.0582 gives FPR_1 = 0.0182 / 0.95 = 1.915789% (1.9158% rounded) for an exact -40.00% drop. In Scenario C1, 0.05 * 0.80 + 0.95 * 0.01 = 0.0495 and 0.06 * 0.40 + 0.94 * 0.01 = 0.0334, yielding (0.0334 - 0.0495) / 0.0495 = -32.525% (-32.53% rounded) while true prevalence rises +20.00% (from 5.00% to 6.00%); in Scenario C2, solving 0.06 * TPR_1 + 0.94 * 0.01 = 0.60 * 0.0495 = 0.0297 gives TPR_1 = 0.0203 / 0.06 = 33.833% (33.83% rounded) for an exact -40.00% classified drop. The sample-size bound n_pos >= 400 also holds: the worst-case 95% Wilson half-width at p = 0.50 with z = 1.95996 is approximately 4.88 percentage points (< 5.0 pp). Causal and observational scoping is exact and avoids overclaiming.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical governance strings present verbatim: \u25c7 provisional release state; attribution naming Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0 with explicit zero copyright claim; exact legal-entity string (Hapax Research LLC, Wyoming, 2026-05-10, filing ID 2026-001973400); exact correction-intake string; exact release-record string including the canonical unnamed-principal clause; exact process disclaimer. 'What this does NOT establish:' section is prominent, substantive, and candid. LinkedIn steelmanned charitably. Zero mentalistic/anthropomorphic intent attributed to AI systems. Zero OPSEC leaks detected: no natural-person names, no local paths, no internal hostnames/IPs, no commercial CTAs, no unexpanded opaque codes.",
+      "input_tokens": 4786,
+      "latency_ms": 13802.63,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 651,
+      "reasoning_tokens": 2160,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "9619c88e74b5bedb3af04b5c4ea5a1e3ae4906ad0c4989b78e9f98abcbe094bf",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All printed arithmetic verified internally consistent. Mixture model C_t = V_t * [p_t * TPR_t + (1 - p_t) * FPR_t] correctly specified. Scenario A: 0.0400 -> 0.0240 = -40.00% classified, -40.00% true exposure (verified). Scenario B1: 0.0970 -> 0.0590 = -39.18% classified, 0.00% true change (verified: -0.038/0.097 = -39.175%). Scenario B2: FPR_1 = 1.9158% yields 0.0582 = exactly 0.60 * 0.0970, -40.00% classified, 0.00% true change (verified). Scenario C1: 0.0495 -> 0.0334 = -32.53% classified, +20.00% true exposure (verified: -0.0161/0.0495 = -32.525%; 0.06/0.05 - 1 = +20.00%). Scenario C2: TPR_1 = 33.83% yields 0.0297 = exactly 0.60 * 0.0495, -40.00% classified, +20.00% true exposure (verified). Parameter count (7 coupled quantities, 6 free under V_1 = V_0) correct. Wilson half-width bound at n_pos >= 400 verified (worst-case ~4.9 pp < 5.0 pp). Identifiability scoping (single scalar ratio cannot identify multiple parameters) is mathematically sound; no overclaiming of causal estimands detected.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

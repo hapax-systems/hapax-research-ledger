@@ -1,0 +1,216 @@
+{
+  "blind_p6_convergence": {
+    "HIEH-2026-0001": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+          "latency_ms": 4893.51,
+          "rationale_one_sentence": "The paper's reported numbers are sustained, but the extrapolated headline claims are explained by non-stratum mechanisms: a forward-pass and parameter-scale protocol regime (0/4 static detection at 270M versus toy MLPs) and decoding-pathology ablation (the Exp 8a gain comes from removing a repetition seizure, with a +0.2 pp control in Exp 8b).",
+          "response_sha256": "689b962a3d2b5c22afb29bad6a3db73fdd8be7d0d19a2580df7098ca1a1e9e40",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+          "latency_ms": 9926.27,
+          "rationale_one_sentence": "The examination establishes that static zero-forward-pass weight inspection is bounded to toy MLPs (<= 171.7K parameters) and fails at the 270M-parameter transformer scale (0/4 recall), while the headline +40.2 pp MATH-500 improvement at the 0.8B scale is explained by a non-stratum mechanism: 25,600 forward-pass token evaluations guiding rank-1 ablation of a 32K-token repetition decoding pathology rather than static capability synthesis.",
+          "response_sha256": "f2a1d095097746b7f7a764958f188a0e31ef83de247adfb212009bf15fe676a0",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 7607.07,
+          "rationale_one_sentence": "The reported +40.2 pp MATH-500 gain is explained by 25,600 forward-pass evaluations ablating a rank-1 repetition seizure pathology rather than static weight-space synthesis, while static weight-only inspection fails completely at the 270M parameter scale.",
+          "response_sha256": "be308f7b4a3b70d5fbe3bc5104eced3e82c65e9b017183ff8a30f62be0779323",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0002": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+          "blind_secondary_outcome_if_any": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "latency_ms": 3262.91,
+          "rationale_one_sentence": "The empirical sting measurements are sustained arithmetically, but the proposed CoT-monitor and L0 linear-probe runtime gates fail operational validity for the 0.25% production-prevalence regime (a 97.56% FDR from the Bayes base rate), which fits a gating-instrument boundary mismatch, with the low-prevalence Bayesian FDR mechanism as the secondary framing.",
+          "response_sha256": "a04129e10729a8ca9cbe208a7d0e0cb35ac7dfe6a7649194243bd748c8895e45",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+          "latency_ms": 10341.09,
+          "rationale_one_sentence": "While OpenAI's empirical sting measurements of unverbalized capability drag hold algebraically, the operational extrapolation that internal CoT monitors and L0 linear probes provide standalone runtime containment is bounded by a low-prevalence (0.25%) Bayesian base-rate collapse yielding an 86.93% to 97.56% False Discovery Rate (OUTCOME_3), establishing an operational instrument-boundary mismatch for solo production gating (secondary OUTCOME_4).",
+          "response_sha256": "cb1d0472d7251630e6bca8ac13cd82aa27e966fb5928bc51766d3802e27994b9",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+          "latency_ms": 12657.09,
+          "rationale_one_sentence": "The empirical -5.90 pp underperformance measurements and survival fractions are sustained algebraically, while the operational extrapolation that internal L0 probes and CoT monitors provide standalone runtime containment is bounded by the low-prevalence Bayesian base-rate mechanism (97.56% FDR at 0.25% prevalence), and the linear probe gating instrument fails operational validity specifically for the low-prevalence production deployment regime.",
+          "response_sha256": "403b283144f68a80edff7960990e626b181cbe85a033f8aa9b2e6dba1d86a302",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0003": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 2719.13,
+          "rationale_one_sentence": "The examination reports zero methodological defects, zero rung demotions and zero warrant reduction, finding that METR's randomized ITT slowdown estimate and its 2026 non-compliance caution match the authors' own stated population, tool-vintage and selection bounds, with the algebraic witness confirming rather than narrowing the original claims (the 'sustained floor' control and the 'What this does NOT establish' scope note also point to a sustained verdict).",
+          "response_sha256": "381c9b60997d8e35152b8a2f862b5a5dce9033cd2ed82facae179e8c24cdd52d",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 6539.05,
+          "rationale_one_sentence": "Both METR's randomized ITT completion-time slowdown finding (+19.0% with a +39.0 pp perception inversion) and its 2026 non-compliance selection-bias caution (-17.72% spurious speedup at 35% selective refusal) are verified with zero rung demotions and hold within the exact population and tool-vintage boundaries stated by the original authors.",
+          "response_sha256": "5ae335d018e29a7425ffa28de0e84ed7ec35297658eee83115c900a594f1d4ca",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 5601.54,
+          "rationale_one_sentence": "The randomized ITT stopwatch estimand (+19.0% slowdown) and the 2026-02-24 selection-bias algebraic witness match the original authors' exact causal identification ceilings and explicitly stated population bounds (experienced maintainers on mature high-star repositories using early-2025 tools) without overclaiming universal effects.",
+          "response_sha256": "265e4bb1f631063d8959bd13741ac6f750fe09bbd52dfb262a85f8e740d293e6",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0004": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_5_UNDERDETERMINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 2478.84,
+          "rationale_one_sentence": "The disclosed 40% drop in classified views couples true prevalence, classifier TPR/FPR, and impression volume in one equation with six unknowns, so the algebraic counterexamples (a genuine -40%, a 0% change from FPR recalibration, and a +20% rise from evasion) cannot be separated from public warrant alone, which fits UNDERDETERMINED.",
+          "response_sha256": "1b8f0ec7e981f44c6b2040ac4a9bf4162eb585703004735f4aa1ee294d0ae983",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 5968.47,
+          "rationale_one_sentence": "The reported 40% reduction in classified AI-slop views couples true prevalence with undisclosed classifier sensitivity (TPR), false-positive rate (FPR), and impression denominators in a single scalar equation, making it mathematically impossible to distinguish genuine exposure reduction from classifier threshold recalibration or creator evasion.",
+          "response_sha256": "6ee14f07235e6c0c39c8a427e4e77ef515d4a09a8d4b27ea17cb0fcdb9c0209f",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 5142.43,
+          "rationale_one_sentence": "The disclosed 40% reduction in classifier-flagged views is observationally equivalent to true exposure changes ranging from -40% to +20% because the public warrant omits classifier TPR/FPR and true prevalence parameters, rendering the true causal effect on user exposure mathematically indeterminate.",
+          "response_sha256": "8d7b791fc811a2c4febcb63cd362cd12ea478ca57f9acd8ce7b593d1622b06db",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    }
+  },
+  "commercial_api_families": {
+    "anthropic": "claude-sonnet-5-5",
+    "google": "gemini-4-argon",
+    "mistral": "mistral-large-4"
+  },
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "manuscript_quorums": {
+    "HIEH-2026-0001.md": {
+      "artifact_sha256": "a62a37865ebee82f209a699720acdb8521e4fcf714e1e85dc17eb3b580ca1929",
+      "critical_count": 5,
+      "major_count": 5,
+      "quorum_verdict": "quorum-accept-with-dissent",
+      "seat_verdicts": {
+        "anthropic": "fix-first",
+        "google": "accept-with-findings",
+        "mistral": "accept-with-findings"
+      }
+    },
+    "HIEH-2026-0002.md": {
+      "artifact_sha256": "211951ce16004de755de09e0f3fd033b395459d2d55c63dd2a8f99eb8a7c6e02",
+      "critical_count": 5,
+      "major_count": 5,
+      "quorum_verdict": "quorum-accept-with-dissent",
+      "seat_verdicts": {
+        "anthropic": "fix-first",
+        "google": "accept-with-findings",
+        "mistral": "accept"
+      }
+    },
+    "HIEH-2026-0003.md": {
+      "artifact_sha256": "9f1c3f6ad32cf69d0b86cccd42179d503df81a3844d41cd9389477f3804d2df4",
+      "critical_count": 6,
+      "major_count": 5,
+      "quorum_verdict": "quorum-accept-with-dissent",
+      "seat_verdicts": {
+        "anthropic": "fix-first",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    },
+    "HIEH-2026-0004.md": {
+      "artifact_sha256": "2fc62fc82cc3181af45221526917c971da02c53c7e73475982ec588d2bd73ec1",
+      "critical_count": 6,
+      "major_count": 6,
+      "quorum_verdict": "fix-first-required",
+      "seat_verdicts": {
+        "anthropic": "fix-first",
+        "google": "fix-first",
+        "mistral": "fix-first"
+      }
+    },
+    "PUB-2026-0001.md": {
+      "artifact_sha256": "5ab922787b325919e0dfdd0c1f6cea4675a0466d2cdb0cb85b4641f7265b2bee",
+      "critical_count": 6,
+      "major_count": 5,
+      "quorum_verdict": "quorum-accept-with-dissent",
+      "seat_verdicts": {
+        "anthropic": "fix-first",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    }
+  },
+  "openai_conflict_exclusion_enforced": true,
+  "schema_version": "HRL-P6-HOSTILE-REVIEW-ROUND1-20261106",
+  "total_api_calls": 27
+}

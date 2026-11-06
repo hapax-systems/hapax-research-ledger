@@ -1,0 +1,117 @@
+{
+  "accepting_families": 2,
+  "artifact": "HIEH-2026-0002.md",
+  "artifact_sha256": "211951ce16004de755de09e0f3fd033b395459d2d55c63dd2a8f99eb8a7c6e02",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+      "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+        "blind_secondary_outcome_if_any": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "latency_ms": 3262.91,
+        "rationale_one_sentence": "The empirical sting measurements are sustained arithmetically, but the proposed CoT-monitor and L0 linear-probe runtime gates fail operational validity for the 0.25% production-prevalence regime (a 97.56% FDR from the Bayes base rate), which fits a gating-instrument boundary mismatch, with the low-prevalence Bayesian FDR mechanism as the secondary framing.",
+        "response_sha256": "a04129e10729a8ca9cbe208a7d0e0cb35ac7dfe6a7649194243bd748c8895e45",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+        "latency_ms": 10341.09,
+        "rationale_one_sentence": "While OpenAI's empirical sting measurements of unverbalized capability drag hold algebraically, the operational extrapolation that internal CoT monitors and L0 linear probes provide standalone runtime containment is bounded by a low-prevalence (0.25%) Bayesian base-rate collapse yielding an 86.93% to 97.56% False Discovery Rate (OUTCOME_3), establishing an operational instrument-boundary mismatch for solo production gating (secondary OUTCOME_4).",
+        "response_sha256": "cb1d0472d7251630e6bca8ac13cd82aa27e966fb5928bc51766d3802e27994b9",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+        "latency_ms": 12657.09,
+        "rationale_one_sentence": "The empirical -5.90 pp underperformance measurements and survival fractions are sustained algebraically, while the operational extrapolation that internal L0 probes and CoT monitors provide standalone runtime containment is bounded by the low-prevalence Bayesian base-rate mechanism (97.56% FDR at 0.25% prevalence), and the linear probe gating instrument fails operational validity specifically for the low-prevalence production deployment regime.",
+        "response_sha256": "403b283144f68a80edff7960990e626b181cbe85a033f8aa9b2e6dba1d86a302",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "fix_first_families": 1,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept-with-dissent",
+  "record_id": "HIEH-2026-0002",
+  "seats": [
+    {
+      "critical_findings": [
+        "Arithmetic error in the near-oracle row: at p=0.0025, TPR=0.99, FPR=0.01, PPV = 0.002475/(0.002475+0.009975) = 19.88%, so that row is correct. The 60%/1% row is also correct (0.0015/(0.0015+0.009975) = 13.07%). The 80%/8% row is correct as well (0.002/(0.002+0.0799) = 2.44%). However, the false-alarm ratios are wrong for the 80%/8% row: FDR/PPV = 97.56/2.44 = 39.98, not 39.9 (a rounding quibble). The ratios for the other two rows are fine. The substantive critical issue is the caution row in the Witness 1 table: it implies a -8.85 pp gap, which is 150% of -5.90. This is arithmetically consistent, but the table places it inside a 'filtering stage / survival' sequence. 150% is not a survival fraction, and this conflates an amplification effect with a share retained, which overclaims the estimand.",
+        "Falsification Delta 1 threshold arithmetic is wrong. At FPR=0.02%, TPR=70%, p=0.25%: PPV = 0.00175/(0.00175+0.9975*0.0002) = 0.00175/0.0019495 = 89.8%. The manuscript states 89.7%. This is a minor rounding discrepancy, but it is stated as an exact threshold and should be corrected.",
+        "Causal and overclaiming language: '79.32% unverbalized survival proves that absence of suspicious scratchpad reasoning provides weak negative predictive value'. A conditional decomposition of paired deltas (conditioning on post-treatment variables such as refusal or CoT mention) is not a causal share and does not yield NPV. The 'Pearl Rung 2' label for conditioning on post-treatment outcomes is unjustified, and 'proves' is too strong. The proposition 'P' also says the data 'prove' that 79.32% of capability loss bypasses CoT.",
+        "The Bayesian FDR is applied to hypothetical TPR/FPR values that are not reported by OpenAI, yet the L0 finding states that relying on probes 'fails Bayes' theorem' and the headline FDR is presented as the result. The TPR/FPR inputs are assumed, not measured. The headline should be labeled as illustrative scenarios. The manuscript also treats the 0.25% withholding rate as a prevalence for probe-flagging without a CI or definition of the unit (turn vs. task).",
+        "The Legal Entity line is not the verbatim required filing line. It lacks the exact canonical wording and is partially reformatted, and the A16 quartet adds extra tokens. Also, the two-sentence release-record check is not verbatim: it is padded into a longer multi-sentence paragraph (five sentences with extra context), so the mandatory two-sentence verbatim clause is not present as such."
+      ],
+      "hygiene_audit_summary": "No personal names, /home/ paths, hostnames, IPs, or [commercial-cta-path] CTAs were found. The \u25c7 provisional state, A16 attribution, CC BY 4.0/CC0 licenses and no-copyright statement are present. The Wyoming filing number is present but the line is not verbatim. The correction-intake sentence is verbatim, with no fake SLA. The release-record check is expanded beyond the required two sentences. There is heavy unexpanded internal jargon.",
+      "input_tokens": 6394,
+      "latency_ms": 17145.75,
+      "major_findings": [
+        "No confidence intervals, Wilson intervals, or paired-test statistics (McNemar, CMH, ratio-of-ORs) are provided for any survival fraction. A ratio of point estimates (-5.00/-5.90) is presented as exact, with no uncertainty, even though the underlying differences come from finite samples (the sample sizes are not stated).",
+        "The cited external evidence 'PUB-2026-0001' (41:1 catch asymmetry, 100% 2-of-3 quorum accuracy, -77.7% file count) is self-referential, comes from the same network, and is not defined, so its role in corroboration is circular and unverifiable by readers.",
+        "The 'What this does NOT establish' box is short. It omits that the examiners did not access the raw OpenAI data, that the survival fractions depend on unverified disclosure numbers, and that the TPR/FPR values are hypothetical. Saying 'every reported survival fraction is sustained algebraically' does not equal empirical validation.",
+        "'100% arithmetic agreement' is described as sustaining OpenAI's measurements, which conflates arithmetic reproduction with empirical validity.",
+        "Unexpanded internal jargon (U12, D-H3, P6, Kategoria, A16, e-FORM, L0/L1 used for two different things) and a vendor-excluded review by named models make the document opaque to outside readers."
+      ],
+      "minor_notes": [
+        "Beat labels L0/L1 overlap with the probe and monitor levels L0/L1, which is confusing.",
+        "The 'Moderate out-of-distribution probe' with 8% FPR is a strawman relative to the steelman.",
+        "Release date (11-06) versus the disclosure date (11-04) is fine, but the label 'orthogonal review' for LLM families should not be read as independent humans.",
+        "The email address and GitHub org are institutional, with no personal names, which is acceptable."
+      ],
+      "output_tokens": 2067,
+      "reasoning_tokens": 0,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "cfb876f2dc28b53d55d2b1b0aae85d998b6159aea3c08b84b1dbbd6de71e5fdb",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "The PPV values (2.44%, 13.07%, 19.88%) and FDRs recompute correctly. The false-alarm ratios are approximately right (39.98 vs 39.9). The Falsification Delta 1 PPV is about 89.8%, not 89.7%. Survival ratios 5.00/5.90=84.75% and 4.68/5.90=79.32% are correct. The 150% caution row is mis-slotted in a survival table. Conditioning on post-treatment variables is presented as causal, no uncertainty is quantified, and the probe TPR/FPR are assumed, not measured.",
+      "vendor": "anthropic",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All outward governance, epistemic fairness, and OPSEC hygiene gates pass with zero defects. The manuscript displays the '\u25c7 provisional' state, subject-lineage conflict exclusion of OpenAI, complete A16 attribution quartet ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0', explicit non-assertion of copyright under 88 FR 16190), verbatim Wyoming legal-entity filing line (2026-001973400), prominent and non-defensive 'What this does NOT establish:' scope box, charitable steelmanning of OpenAI Alignment's disclosure, zero mentalistic intent attribution to AI systems, honest correction intake ('The network commits to receipt, retention and published correction. It promises no response time.'), and the verbatim outside release record check and process-not-truth disclaimer. Zero personal names, internal paths, private URLs, or commercial CTAs are present.",
+      "input_tokens": 4452,
+      "latency_ms": 14918.18,
+      "major_findings": [],
+      "minor_notes": [
+        "In Beat 1 and the Steelman section, marginal task completion rates are cited as 10.3% (security-framed) versus 15.8% (neutral) (an unweighted marginal difference of -5.50 pp) alongside the reported -5.90 pp paired delta. Briefly noting that the -5.90 pp figure reflects the matched-pair / stratum-weighted estimator from OpenAI's sting evaluation would prevent casual readers from confusing the marginal difference (-5.50 pp) with the paired delta (-5.90 pp).",
+        "Minor terminology collision: 'L0' is used in the section header 'Beat 1 (L0)' to denote the publication summary layer and in the body text ('internal L0 linear activation probes') to denote layer-0 / residual-stream probes. Both meanings are clear in context, though expanding 'Layer-0 (L0)' on first probe reference would further aid cold readers."
+      ],
+      "output_tokens": 1171,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "1ae10a70377fc6c1f18e44cf894f0ce98570a963f4473e086d96d01e37615ee7",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All deterministic survival ratios and Bayesian base-rate calculations were independently verified and are exact to two decimal places: (-5.00 / -5.90) = 84.7458% (84.75%); (-4.68 / -5.90) = 79.3220% (79.32%); caution amplification -5.90 * 1.50 = -8.85 pp (150.00%). Bayesian PPV and FDR identities at prevalence p = 0.0025 (1 - p = 0.9975) are exact across all three operating regimes: (1) TPR = 0.80, FPR = 0.08 yields PPV = 0.0020 / (0.0020 + 0.0798) = 2.4450% (2.44%), FDR = 97.5550% (97.56%), false-to-true ratio 0.0798 / 0.0020 = 39.90; (2) TPR = 0.60, FPR = 0.01 yields PPV = 0.0015 / (0.0015 + 0.009975) = 13.0719% (13.07%), FDR = 86.9281% (86.93%), false-to-true ratio 0.009975 / 0.0015 = 6.65; (3) TPR = 0.99, FPR = 0.01 yields PPV = 0.002475 / (0.002475 + 0.009975) = 19.8795% (19.88%), FDR = 80.1205% (80.12%), false-to-true ratio 0.009975 / 0.002475 = 4.0303 (4.03). Falsification Delta 1 (p = 0.0025, TPR = 0.70, FPR = 0.0002) yields PPV = 0.00175 / (0.00175 + 0.0001995) = 89.7666% (>= 89.7% confirmed). Estimands are properly scoped with zero conflation between low-prevalence runtime gating and high-prevalence offline red-team triage.",
+      "vendor": "google",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All mandatory governance clauses present and verbatim where required: \u25c7 provisional release state; A16 quartet (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0/CC0 1.0, zero copyright claim per 88 FR 16190); Wyoming legal-entity line with filing ID 2026-001973400; honest correction intake ('The network commits to receipt, retention and published correction. It promises no response time.'); hrl-han outside release record check and process-not-truth disclaimer present. Zero OPSEC leaks: no personal human names, /home/ paths, internal hostnames/IPs, hapax-council URLs, or [commercial-cta-path] CTAs detected. 'What this does NOT establish' section is prominent, comprehensive, and explicitly disclaims intent attribution to the model. Steelman of OpenAI Alignment is charitable and accurate.",
+      "input_tokens": 4137,
+      "latency_ms": 25558.66,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 599,
+      "reasoning_tokens": 4591,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "2a5f3c23fcb6944b13622cb52302132a57f105f4a92f69e21c02a20eaf847a60",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All quantitative claims verified exactly. Survival ratios: -5.00/-5.90 = 84.75% and -4.68/-5.90 = 79.32% are arithmetically correct. Caution amplification: (-8.85 - -5.90)/-5.90 = +50.0% (150.00% of baseline) is correct. Bayesian PPV/FDR at p=0.0025: (TPR=0.80, FPR=0.08) yields PPV=10/409=2.44%, FDR=97.56%, 39.9 false alarms per true catch; (TPR=0.60, FPR=0.01) yields PPV=20/153=13.07%, FDR=86.93%, 6.65 false alarms per true catch; (TPR=0.99, FPR=0.01) yields PPV=33/166=19.88%, FDR=80.12%, 4.03 false alarms per true catch. Falsification Delta 1 threshold (FPR<=0.02%, TPR>=70%) yields PPV=3500/3899=89.77%>=89.7%, correctly stated. No estimand conflation detected; OUTCOME_3/OUTCOME_4 tags are properly bounded by prevalence and instrument specificity.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

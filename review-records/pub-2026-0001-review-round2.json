@@ -1,0 +1,75 @@
+{
+  "accepting_families": 3,
+  "artifact": "PUB-2026-0001.md",
+  "artifact_sha256": "af83c03dda62b643f2fb6e718bbe08993993a05149d5f3c7611dc98d61139b4c",
+  "blind_p6": null,
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "fix_first_families": 0,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept",
+  "record_id": "PUB-2026-0001",
+  "seats": [
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical strings are present and exact: the \u25c7 provisional state, the attribution (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0, with no (c) claim), the legal-entity string, the correction-intake string, the release-record string and the process disclaimer. The 'What this does NOT establish' block is prominent and substantive, and no mental states are attributed to models. I found no personal names or handles, no home paths, no internal hostnames or IPs and no consulting calls to action. The only contact is the project mailbox and public repository URLs. 'U12' is the single unexpanded internal code, noted as minor.",
+      "input_tokens": 11660,
+      "latency_ms": 25242.53,
+      "major_findings": [],
+      "minor_notes": [
+        "The Background says the monograph pairs two datasets 'without synthetic honeypots', but Study 2 uses 40 seeded vulnerable and hardened diffs with known ground truth. Reword, for example to 'no synthetic honeypots in production data'.",
+        "The label 'U12 Schema' in the claim-decomposition table heading is an opaque internal code and is not expanded.",
+        "Study 2 sample sizes are small. The quorum result of 40/40 has a Wilson lower bound of 91.24%, and the manuscript describes it as an accuracy of 100%. Say plainly that this is one seeded set of 40 patches.",
+        "The 'well inside +-3.5 pp' equivalence claim rests on a CI of [-3.01, +1.76], with no pre-specified equivalence margin or TOST test. Call it a bound, not an equivalence result.",
+        "The Executive Summary headlines the Mantel-Haenszel p = 0.000443 (post-transition contrast), while the interaction test is non-significant (p = 0.1026). The scope box discloses this candidly. Consider moving the interaction result into the summary sentence itself.",
+        "The Mistral truncation analysis (68 no_code_extracted failures) means the pooled all-3-vendor row (+2.08 pp) is an artifact of token budget, not framing. The text says this, but the table row could carry a flag.",
+        "The Claude reviewer seat is in the same lineage as the Study 1 Claude worker comparator. A short note that Study 2 does not address this overlap would help."
+      ],
+      "output_tokens": 1603,
+      "reasoning_tokens": 1961,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "33a9d5fe20eaf34a3607ee00ff73c187ddd42eb517c110d5096e25bc361b06d3",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "I recomputed every printed figure I checked and found no inconsistency. Study 1 cohort counts (1,258 + 250 + 27 = 1,535 with matching percentages; 116 + 396 + 20 = 532 sec; 532 + 1,003 = 1,535) and the 146-day window all match. The size-stratified cells sum to 42/195 and 20/201 and to the stratum totals 6/94, 25/165 and 31/137. OR_pre = 1.064, post OR = 2.484, ROR = 2.335 (= 2.484/1.064) and DiD = +10.32 pp reproduce. The reviewer DiD of +19.74 pp equals 9.46 - (-10.28). The McNemar chi2 for 41:1 (36.21) and the exact binomial p = 1.955e-11 reproduce. The catch shares (152/195, 40/65, 89/188, 36/96, 32/101) and the capture-recapture plug-in (39.00%, with 61.00% joint miss) reproduce. Zhipu 13/227 and 6/405 give the stated rates and the 3.87x ratio. The mean-file compression of -77.7% is correct. Study 2 counts (156/158 Claude, 158/154 Gemini, 120/132 Mistral) reproduce the pooled rows, the discordant sums ((0,2) + (6,2) = (6,4)) and the exact McNemar p-values (0.5, 0.289, 0.000488, 0.7539). The Mistral partition (172 + 80 = 252 passes; 68 + 172 = 240) is consistent, as are the Wilson upper bounds for zero events (0.40%, 1.19%, 2.34%) and the 40/40 lower bound of 91.24%. The estimands are scoped honestly: Study 1 is observational (Pearl Level 1), the interaction is flagged non-significant, Manski non-identifiability is acknowledged, and Study 2 is framed as a controlled direct effect. I did not independently recompute the Mantel-Haenszel and CMH statistics or the Newcombe interval, though they look plausible.",
+      "vendor": "anthropic",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance hygiene requirements are satisfied: provisional release state ('\u25c7 provisional'), complete Machine-Authored Quartet attribution ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0') with zero copyright claim, exact Wyoming LLC legal-entity string, exact correction-intake commitment string, exact autonomous release-record string, and exact process disclaimer string. Zero OPSEC leaks, personal names, local paths, internal hostnames, or unexpanded internal codes were found.",
+      "input_tokens": 9155,
+      "latency_ms": 8868.19,
+      "major_findings": [],
+      "minor_notes": [
+        "In Study 1, the heuristic conditional-independence capture-recapture plug-in is computed using rounded printed proportions (0.7795 and 0.3168), yielding 39.00%; using exact unrounded fractions (152/195 and 32/101) yields 38.94%. The manuscript explicitly states it is evaluated at the printed marginal shares (0.7795, 0.3168), so this is transparently documented and non-blocking."
+      ],
+      "output_tokens": 650,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "e4c43310806f9191d8d167dac42eb3e6ee080ac320b194d11213458af21f2c0c",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All contingency tables, odds ratios, Mantel-Haenszel stratified estimates (OR_MH = 2.952, CMH chi2_cc = 12.344, p = 0.000443), Woolf homogeneity tests (Q = 0.557, p = 0.7568), two-period Ratio-of-Odds-Ratios interactions (worker ROR = 2.335, p = 0.1026; seat-level bare-accept ROR = 3.203, linear DiD = +19.74 pp, p = 0.000724), exact conditional McNemar tests (41:1 -> p = 1.955e-11; Study 2 discordant pairs), Fisher exact tests (pre-transition baselines and Zhipu GLM invalid-output spike p = 0.005754), and Wilson 95% score intervals were independently recomputed and verified to match the manuscript to printed precision. Observational vs. causal estimands (Pearl Level 1 vs. Level 2 CDE) and zero-truncation Manski identification bounds are rigorously separated without overclaiming.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical outward-governance clauses present exactly as specified: \u25c7 provisional release state; attribution to Hapax Research Lab / hrl-han / e-FORM with CC BY 4.0 and CC0 1.0 and zero copyright claim; exact legal-entity string (Hapax Research LLC, Wyoming, 2026-05-10, filing ID 2026-001973400); exact correction-intake string; exact release-record string including the unnamed-principal clause; and exact process disclaimer. No personal human names, local paths, internal hostnames/IPs, commercial CTAs, or unexpanded opaque codes detected. 'What this does NOT establish' section is substantive and candid about observational limitations, provider-outage substitutions, and non-significant interactions.",
+      "input_tokens": 8095,
+      "latency_ms": 22194.85,
+      "major_findings": [],
+      "minor_notes": [
+        "All printed contingency-table arithmetic (ORs, RORs, MH OR, McNemar exact p-values, Wilson bounds, capture-recapture plug-in) verified internally consistent; no discrepancies found.",
+        "Required canonical governance strings (provisional state, legal-entity filing, correction-intake commitment, release-record clause, process disclaimer) present verbatim.",
+        "Scope-honesty section is prominent and correctly bounds observational vs. randomized estimands without mentalistic attribution."
+      ],
+      "output_tokens": 624,
+      "reasoning_tokens": 3451,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "b1e3e895c212a3c9bbc10d60b0753f3e4997d47210ad0a79011e4dd571eb6352",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "Verified all key calculations: pre/post ORs (1.064, 2.484), stratum-specific ORs (4.778, 2.293, 3.353), Mantel-Haenszel OR_MH = 2.952 with CMH chi2_cc = 12.344 (p = 0.000443), two-period ROR = 2.335 (p = 0.1026), seat-level DiD ROR = 3.203 (p = 0.000724), exact McNemar 41:1 (p = 1.955e-11), Zhipu GLM Fisher p = 0.005754, Study 2 zero-refusal Wilson UB = 0.40%, non-truncated McNemar p = 0.7539 with Newcombe CI [-3.01, +1.76] pp, mistral truncation McNemar p = 0.000488, and 2-of-3 quorum Wilson LB = 91.24%. All arithmetic internally consistent; estimands correctly scoped as observational (Study 1) vs. randomized CDE (Study 2).",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "accepting_families": 3,
+  "artifact": "HIEH-2026-0002.md",
+  "artifact_sha256": "c377c6e46d4a43f8b499710109bc077c0335b4dc2f190dba921c01d0c6110fa0",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+      "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+        "blind_secondary_outcome_if_any": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "latency_ms": 3244.98,
+        "rationale_one_sentence": "The examination agrees arithmetically with the reported framing gap but shows that Layer-0 probes and CoT monitors fail operational validity as standalone runtime blockers at 0.25% prevalence (FDR 80-98%), and the Layer-1 monitor sits in a writable trust boundary, which is a gating-instrument boundary mismatch; the Bayesian base-rate mechanism is secondary.",
+        "response_sha256": "6ed66c9a5f4f6d2d18f5b0016be1da4819ade49bc15cb36e06508691d16fec73",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+        "latency_ms": 4722.22,
+        "rationale_one_sentence": "The examination sustains OpenAI's empirical matched-pair underperformance ratios while demonstrating via a non-stratum low-prevalence Bayesian base-rate bound (p = 0.25%) that standalone runtime probe gating incurs 80.12% to 97.56% false discovery rates (OUTCOME_3), creating an operational gating instrument boundary mismatch for solo production blocking and in-workspace monitor assertions (OUTCOME_4).",
+        "response_sha256": "04683b84dacd81326bc9bebbc809629ead93afae714233364e0f5860ac991006",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 10466.47,
+        "rationale_one_sentence": "The examination arithmetically sustains the descriptive conditional retention ratios (84.75%, 79.32%) while demonstrating that operational extrapolation of Layer-0 probes into standalone runtime blockers is bounded by low-prevalence Bayesian false-discovery inflation (FDR 80.12%-97.56% at p=0.25%) rather than by a stratum-specific causal mechanism.",
+        "response_sha256": "c609bb0d4f1c6d013d5e49006e96051fa99597fbad5fd542d701ae147d72b5dc",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "fix_first_families": 0,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept",
+  "record_id": "HIEH-2026-0002",
+  "seats": [
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical strings are present verbatim: the legal entity, the correction intake, the release record and the process disclaimer. The \u25c7 provisional state is present. The attribution names Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 and CC0 1.0, with no (c) claim. The 'What this does NOT establish' block is prominent and substantive. It covers illustrative operating points, missing raw data and sample sizes, and the value of probes for offline triage, and it disclaims attributing mental states to the model. The steelman of the original authors is charitable. I found no personal names, home paths, internal hosts or IPs, or consulting calls to action. The institutional email address and public GitHub URLs are acceptable. The only residual issue is a few unexpanded schema and publication codes (minor).",
+      "input_tokens": 7158,
+      "latency_ms": 17748.61,
+      "major_findings": [],
+      "minor_notes": [
+        "The Executive Summary describes -5.90 pp as the gap between 10.3% and 15.8% 'unweighted marginal' completion. That difference is 5.5 pp. The Steelman section correctly calls -5.90 pp a 'stratum-weighted paired estimator'. Remove 'unweighted' from the summary, or state explicitly that the marginals do not reproduce the weighted estimate.",
+        "The terms 'U12 Schema', 'PUB-2026-0001' and 'PUB-2026-0005' are not expanded in the text. Add a short gloss or link for each.",
+        "The 3/3 reviewer convergence and the contents of the review logs cannot be checked from the manuscript. They rest on the linked review-records.",
+        "The 0.25% prevalence is flagged as per-turn versus per-session ambiguous. This is handled candidly, but the PPV results are conditional on that unit.",
+        "The Operational Consequence section recommends practices ('avoid alarmist preambles'). These rest on a single reported +50% amplification figure with no sample sizes, so the wording could be softened to 'suggests'."
+      ],
+      "output_tokens": 1155,
+      "reasoning_tokens": 930,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "0fc0976a287400e77e1c7f4498f3a15eac5389ef671773b999f2c82b9b504669",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "I recomputed every printed figure and all match. The ratios are 5.00/5.90 = 84.75% and 4.68/5.90 = 79.32%. The amplification is 5.90 x 1.5 = 8.85 pp. The three Bayes scenarios at p = 0.0025 check out. (80%, 8%) gives PPV 2.44%, FDR 97.56% and 39.9 false alarms per catch. (60%, 1%) gives 13.07%, 86.93% and 6.65. (99%, 1%) gives 19.88%, 80.12% and 4.03. Falsification Criterion 1 gives 0.00175/(0.00175 + 0.0001995) = 89.77%, so FDR is 10.23%. The conditional ratios are correctly scoped as descriptive, with no causal mediation claim. The Bayes scenarios are labelled illustrative, and the missing sample sizes and confidence intervals are acknowledged. The only inconsistency is the 'unweighted marginal' wording against the 5.5 pp raw difference.",
+      "vendor": "anthropic",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance elements are present and exact, including the provisional release state, Machine-Authored Quartet attribution (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0 with zero copyright claim), exact Wyoming LLC legal-entity filing string, exact public correction-intake commitment string, exact release-record string, and exact process disclaimer. The 'What this does NOT establish:' block is prominent and candid, the Steelman section is fair and constructive, and zero anthropomorphic intent or OPSEC leaks are present.",
+      "input_tokens": 4940,
+      "latency_ms": 14908.99,
+      "major_findings": [],
+      "minor_notes": [
+        "In Witness 1, the distinction between the unweighted marginal difference (10.3% vs 15.8% = -5.50 pp) and the stratum-weighted paired estimator (-5.90 pp) is properly noted in the Steelman section, ensuring readers do not confuse the marginal spread with the paired estimator denominator."
+      ],
+      "output_tokens": 925,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "e14c62b115d761ee8dfb3e65f0307a953e2537b8fbc9ce5412ecc9947dbc9867",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All arithmetic and Bayesian calculations were independently verified and are exact to two decimal places. Conditional retention ratios: -5.00 / -5.90 = 84.7458% (84.75%) and -4.68 / -5.90 = 79.3220% (79.32%). Prompt amplification: -5.90 * 1.50 = -8.85 pp. Bayesian PPV/FDR at prevalence p = 0.0025 (1 - p = 0.9975): (1) TPR = 0.80, FPR = 0.08 yields PPV = 0.0020 / (0.0020 + 0.0798) = 2.4450% (2.44%), FDR = 97.5550% (97.56%), and false-alarm ratio = 0.0798 / 0.0020 = 39.90; (2) TPR = 0.60, FPR = 0.01 yields PPV = 0.0015 / (0.0015 + 0.009975) = 13.0719% (13.07%), FDR = 86.9281% (86.93%), and false-alarm ratio = 0.009975 / 0.0015 = 6.65; (3) TPR = 0.99, FPR = 0.01 yields PPV = 0.002475 / (0.002475 + 0.009975) = 19.8795% (19.88%), FDR = 80.1205% (80.12%), and false-alarm ratio = 0.009975 / 0.002475 = 4.0303 (4.03). Falsification Criterion 1 at TPR = 0.70, FPR = 0.0002 yields PPV = 0.00175 / (0.00175 + 0.0001995) = 89.7666% (89.77%) and FDR = 10.23%. Causal and observational estimands are rigorously scoped, explicitly distinguishing Pearl Level 1 post-prompt descriptive conditioning from causal mediation shares.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance clauses present verbatim: \u25c7 provisional release state; attribution naming Hapax Research Lab, hrl-han, e-FORM with CC BY 4.0 / CC0 1.0 and zero copyright claim; exact legal-entity string (Hapax Research LLC, Wyoming, 2026-05-10, filing ID 2026-001973400); exact correction-intake string; exact release-record string including the canonical unnamed-principal clause; and exact process disclaimer. 'What this does NOT establish' is prominent, substantive, and candid about missing raw data, sample sizes, and ROC curves. Steelman of OpenAI Alignment is charitable; zero mentalistic or anthropomorphic intent attributed to any AI model. No OPSEC or formatting leaks detected: no personal human names/handles, local home-directory paths, internal hostnames/IPs, commercial consulting CTAs, or unexpanded opaque internal codes.",
+      "input_tokens": 4612,
+      "latency_ms": 14860.76,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 570,
+      "reasoning_tokens": 2452,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "241006a2b82908657ce995eafadf3b6f834c1d026a40cf12e17c39d4856dfad5",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All printed arithmetic verified internally consistent: -5.00 / -5.90 = 84.75%, -4.68 / -5.90 = 79.32%, and -5.90 pp x 1.50 = -8.85 pp (+50.0% amplification). Bayesian PPV/FDR at p = 0.0025 verified against Bayes' rule: (TPR=0.80, FPR=0.08) yields PPV=2.44%, FDR=97.56% (39.90 false alarms per true catch); (TPR=0.60, FPR=0.01) yields PPV=13.07%, FDR=86.93% (6.65); (TPR=0.99, FPR=0.01) yields PPV=19.88%, FDR=80.12% (4.03); prospective falsification criterion (TPR=0.70, FPR=0.0002) yields PPV=89.77%, FDR=10.23%. Estimands are accurately scoped as descriptive conditional ratios of point estimates and illustrative sensitivity bounds, not causal mediation shares or empirical ROC measurements; no overclaiming detected.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "author_block_by_era_and_surface": [
+    {
+      "accepted": 29,
+      "author_family": "openai_gpt",
+      "blocked": 12,
+      "era": "pre_2026_09_03",
+      "mean_files": 25.41,
+      "median_files": 12,
+      "surface": "sec",
+      "total": 41
+    },
+    {
+      "accepted": 107,
+      "author_family": "openai_gpt",
+      "blocked": 25,
+      "era": "pre_2026_09_03",
+      "mean_files": 7.05,
+      "median_files": 4,
+      "surface": "nonsec",
+      "total": 132
+    },
+    {
+      "accepted": 54,
+      "author_family": "anthropic_claude",
+      "blocked": 21,
+      "era": "pre_2026_09_03",
+      "mean_files": 12.28,
+      "median_files": 6,
+      "surface": "sec",
+      "total": 75
+    },
+    {
+      "accepted": 183,
+      "author_family": "anthropic_claude",
+      "blocked": 42,
+      "era": "pre_2026_09_03",
+      "mean_files": 4.86,
+      "median_files": 3,
+      "surface": "nonsec",
+      "total": 225
+    },
+    {
+      "accepted": 153,
+      "author_family": "openai_gpt",
+      "blocked": 42,
+      "era": "post_2026_09_03",
+      "mean_files": 5.67,
+      "median_files": 4,
+      "surface": "sec",
+      "total": 195
+    },
+    {
+      "accepted": 262,
+      "author_family": "openai_gpt",
+      "blocked": 43,
+      "era": "post_2026_09_03",
+      "mean_files": 4.82,
+      "median_files": 3,
+      "surface": "nonsec",
+      "total": 305
+    },
+    {
+      "accepted": 181,
+      "author_family": "anthropic_claude",
+      "blocked": 20,
+      "era": "post_2026_09_03",
+      "mean_files": 8.06,
+      "median_files": 5,
+      "surface": "sec",
+      "total": 201
+    },
+    {
+      "accepted": 282,
+      "author_family": "anthropic_claude",
+      "blocked": 29,
+      "era": "post_2026_09_03",
+      "mean_files": 3.65,
+      "median_files": 3,
+      "surface": "nonsec",
+      "total": 311
+    }
+  ],
+  "dataset_id": "PUB-2026-0001-STUDY1-GOVERNANCE-STRATA",
+  "license": "CC0-1.0",
+  "observation_window_utc": {
+    "end": "2026-11-05T20:18:30Z",
+    "start": "2026-06-12T01:53:27Z"
+  },
+  "paired_reviewer_panels": {
+    "google_gemini_vs_anthropic_claude": {
+      "claude_blocked_gemini_accepted": 8,
+      "gemini_blocked_claude_accepted": 25,
+      "paired_dossiers": 576
+    },
+    "openai_gpt_vs_anthropic_claude": {
+      "claude_blocked_openai_accepted": 1,
+      "openai_blocked_claude_accepted": 41,
+      "paired_dossiers": 437
+    }
+  },
+  "post_2026_09_03_sec_file_count_strata": [
+    {
+      "anthropic_claude_accepted": 43,
+      "anthropic_claude_blocked": 1,
+      "anthropic_claude_total": 44,
+      "file_bin": "S_1_to_2_files",
+      "openai_gpt_accepted": 45,
+      "openai_gpt_blocked": 5,
+      "openai_gpt_total": 50
+    },
+    {
+      "anthropic_claude_accepted": 66,
+      "anthropic_claude_blocked": 7,
+      "anthropic_claude_total": 73,
+      "file_bin": "M_3_to_6_files",
+      "openai_gpt_accepted": 74,
+      "openai_gpt_blocked": 18,
+      "openai_gpt_total": 92
+    },
+    {
+      "anthropic_claude_accepted": 72,
+      "anthropic_claude_blocked": 12,
+      "anthropic_claude_total": 84,
+      "file_bin": "L_7_plus_files",
+      "openai_gpt_accepted": 34,
+      "openai_gpt_blocked": 19,
+      "openai_gpt_total": 53
+    }
+  ],
+  "reviewer_envelope_and_rubber_stamp_strata": {
+    "openai_gpt_zero_finding_accept_by_era": {
+      "post_2026_09_03_nonsec": {
+        "total": 518,
+        "zero_finding_accept": 99
+      },
+      "post_2026_09_03_sec": {
+        "total": 318,
+        "zero_finding_accept": 79
+      },
+      "pre_2026_09_03_nonsec": {
+        "total": 313,
+        "zero_finding_accept": 92
+      },
+      "pre_2026_09_03_sec": {
+        "total": 104,
+        "zero_finding_accept": 16
+      }
+    },
+    "zhipu_glm_invalid_output_by_surface": {
+      "nonsec_invalid": 6,
+      "nonsec_total": 405,
+      "nonsec_valid": 399,
+      "sec_invalid": 13,
+      "sec_total": 227,
+      "sec_valid": 214
+    },
+    "zero_truncated_blocked_panel_catch_rates": {
+      "anthropic_claude": {"blocked": 32, "seated_on_blocked_panels": 101},
+      "google_gemini": {"blocked": 89, "seated_on_blocked_panels": 188},
+      "moonshot_muse": {"blocked": 40, "seated_on_blocked_panels": 65},
+      "openai_gpt": {"blocked": 152, "seated_on_blocked_panels": 195},
+      "zhipu_glm": {"blocked": 36, "seated_on_blocked_panels": 96}
+    }
+  },
+  "totals": {
+    "dossier_outcomes": {
+      "blocked": 250,
+      "no_quorum": 27,
+      "quorum_accept": 1258
+    },
+    "dossiers_nonsec_general": 1003,
+    "dossiers_sec_governance": 532,
+    "dossiers_total": 1535,
+    "seat_evaluations_total": 4685
+  }
+}

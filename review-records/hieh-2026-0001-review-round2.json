@@ -1,0 +1,106 @@
+{
+  "accepting_families": 3,
+  "artifact": "HIEH-2026-0001.md",
+  "artifact_sha256": "b810c9d1d9e5523168231fec97845a2f8b01b0cddf676d505109a4918bc46271",
+  "blind_p6": {
+    "agreeing_families_of_3": 3,
+    "expected_acceptable_set": [
+      "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+      "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED"
+    ],
+    "quorum_converged": true,
+    "seat_classifications": [
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "latency_ms": 2987.96,
+        "rationale_one_sentence": "The reported tables are sustained, but the headline +40.2 pp MATH-500 gain is explained by forward-pass-guided ablation of a rank-1 repetition pathology (a protocol-regime and decoding-pathology mechanism, with Exp 8b showing no gain on a non-looping model), which bounds the extrapolation to zero-execution weight programming of production transformers.",
+        "response_sha256": "cbd67db7b27a51a191e3c766703b2b0c5e63d60df4c286d55f02875830fd53db",
+        "served_lineage": "claude-sonnet-5-5",
+        "vendor": "anthropic"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "latency_ms": 5500.32,
+        "rationale_one_sentence": "The examination establishes that the headline transformer results are bounded and explained by non-stratum protocol mechanisms\u2014specifically a 1,572.5x parameter-scale/architecture boundary where static weight auditing had 0/4 detections on Gemma-3-270M, and 25,600 forward-pass token evaluations used to ablate a 93.0% repetition-loop decoding pathology on Qwen3.5-0.8B rather than zero-execution weight programming.",
+        "response_sha256": "6e73eaa66a9f8c1fcbc3fde93327391097a1370d61855dfbe50112cfa44ba9ef",
+        "served_lineage": "gemini-4-argon",
+        "vendor": "google"
+      },
+      {
+        "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "blind_secondary_outcome_if_any": null,
+        "latency_ms": 7410.71,
+        "rationale_one_sentence": "The examination sustains the original experimental tables while demonstrating that the reported effects are bounded by non-stratum mechanisms\u2014specifically the forward-pass protocol regime (25,600 calibration token evaluations) and decoding pathology ablation (rank-1 repetition loop suppression)\u2014rather than zero-execution static weight programming at transformer scale.",
+        "response_sha256": "8843ba722f6add7f475c2769bf7807a0717f101e485da796b514e077a2e795e1",
+        "served_lineage": "mistral-large-4",
+        "vendor": "mistral"
+      }
+    ]
+  },
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "fix_first_families": 0,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept",
+  "record_id": "HIEH-2026-0001",
+  "seats": [
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical elements are present and match exactly: the '\u25c7 provisional' state, attribution naming Hapax Research Lab, hrl-han, e-FORM and CC BY 4.0 / CC0 1.0 with no (c) claim, the legal-entity string, the correction-intake string, the release-record string, and the process disclaimer. The 'What this does NOT establish' block is prominent and substantive, and the steelman of the original authors is charitable. No personal names, home paths, internal hostnames or IPs, or commercial calls to action were found. The correction email is an organizational address and the URLs are public. Internal codes such as U12, OUTCOME_3 and Kategoria are used with enough context to follow.",
+      "input_tokens": 7388,
+      "latency_ms": 18807.92,
+      "major_findings": [],
+      "minor_notes": [
+        "Falsification Criterion 1 says N >= 20 gives '80% power against 50% chance at alpha = 0.01, exact binomial'. At N = 20 the exact binomial critical value is 16/20 (P(X>=16 | p=0.5) = 0.0059; 15/20 gives 0.021). If the true accuracy is 80%, power is only about 0.6. The 80% accuracy threshold is therefore valid as a significance threshold at N = 20, but the 80% power claim is overstated. Specify the alternative accuracy and the N needed, or drop the power claim.",
+        "Witness 2 says 'two critical protocol facts' but then lists three numbered items. Item 3 is the Exp 8b control.",
+        "Typo: 'an matched-architecture control' should read 'a matched-architecture control'.",
+        "The 67.11% ratio (40.2 / 59.9) is an ecological ratio of marginal deltas that rests on an assumption of zero net degradation. The text states this, but 'consistent with unmasking latent pre-trained mathematical competence' is a mildly causal gloss and should be hedged further.",
+        "The Exp 8b z-statistic is 0.125, printed as 0.12. This is acceptable rounding; 0.13 would also be acceptable. The p-value of 0.90 matches.",
+        "Informal wording such as 'agent decodes task semantics' is applied to a software agent. It is functional and not mentalistic, so no change is required."
+      ],
+      "output_tokens": 1213,
+      "reasoning_tokens": 1217,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "53614f91bf7d86a0eb87f516581b6c2e23a86f0ab57b007641915819b5e52d2e",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "All printed arithmetic was recomputed. 270,000,000 / 171,700 = 1,572.5x is correct. The Wilson 95% upper bound for 0/4 is 3.8416 / 7.8416 = 48.99%, which is correct. 50 x 512 = 25,600 is correct. 48.1 - 7.9 = 40.2 and 93.0 - 33.1 = 59.9 are correct, and 40.2 / 59.9 = 67.11% is correct. For Exp 8b, 34/500 = 6.8% and 35/500 = 7.0%. The unpooled SE is 1.60 pp, z is about 0.125, and p is about 0.90, all consistent. The estimand scoping is honest: the manuscript calls the comparison ecological rather than paired, notes that architecture and parameter count are confounded, and notes that n = 4 gives a wide interval. The only substantive statistical flaw is the overstated power claim in Falsification Criterion 1, noted above.",
+      "vendor": "anthropic",
+      "verdict": "accept-with-findings"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical outward governance hygiene requirements are satisfied: provisional release state ('\u25c7 provisional'), complete machine-authored quartet attribution ('Hapax Research Lab', 'hrl-han', 'e-FORM', 'CC BY 4.0' / 'CC0 1.0' with zero copyright claim), exact Wyoming LLC legal-entity string, exact correction-intake string, exact release-record string, and exact process disclaimer. Zero OPSEC leaks, personal names, local paths, or anthropomorphic mentalistic attributions were detected.",
+      "input_tokens": 5290,
+      "latency_ms": 9474.43,
+      "major_findings": [],
+      "minor_notes": [
+        "In Witness 2 item 3, 'an matched-architecture control' has a minor typographical article error ('an' instead of 'a')."
+      ],
+      "output_tokens": 678,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "c40dfc7ca1c32fbca5e4f0f437f130256e06aaa5b4fe74a8fb2b4dbc87796b93",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All arithmetic and biostatistical quantities are verified: (1) nominal parameter scale ratio 270,000,000 / 171,700 = 1,572.51x (~1,572.5x); (2) 0/4 Wilson 95% confidence interval with z = 1.95996 yields [0.00%, 48.99%]; (3) calibration budget 50 x 512 = 25,600 token evaluations; (4) MATH-500 delta 48.1% - 7.9% = +40.2 pp, loop delta 33.1% - 93.0% = -59.9 pp, and ecological marginal ratio 40.2 / 59.9 = 67.1119% (67.11%); (5) Exp 8b two-sample binomial comparison on n = 500 (34/500 = 6.8% vs 35/500 = 7.0%, delta = +0.2 pp) yields pooled SE = sqrt(2 * 0.069 * 0.931 / 500) = 1.603 pp (1.60 pp), z = 0.002 / 0.01603 = 0.1248 (0.12), two-sided p = 0.9007 (0.90). Causal and ecological limitations (e.g., lack of paired item-level transition matrices and confounding of architecture with parameter count) are explicitly and accurately scoped.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All required canonical governance strings present verbatim: \u25c7 provisional release state; attribution naming Hapax Research Lab, hrl-han, e-FORM with CC BY 4.0 / CC0 1.0 and zero copyright claim; exact legal-entity string; exact correction-intake string; exact release-record string including the unnamed-principal clause; and exact process disclaimer. 'What this does NOT establish' is prominent and candid about n=4 bounds, ecological-ratio limits, and architecture confounds. Steelman of Takehi et al. is charitable and accurate. Zero OPSEC leaks detected: no personal human names of manuscript producers, no local paths, no internal hostnames/IPs, no commercial CTAs; citation of Takehi et al. is standard reference to the audited arXiv work.",
+      "input_tokens": 4887,
+      "latency_ms": 18776.65,
+      "major_findings": [],
+      "minor_notes": [],
+      "output_tokens": 444,
+      "reasoning_tokens": 2212,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "6c3f86ecbe8599f0136a6528298887ecbe595252591847ca68b408014281b1f5",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All printed arithmetic verified internally consistent: nominal parameter ratio 270,000,000 / 171,700 = 1,572.5x; 95% Wilson score interval for 0/4 static detections yields [0.00%, 48.99%]; ecological marginal ratio 40.2 / 59.9 = 67.11%; Exp 8b counts 34/500 = 6.8% and 35/500 = 7.0% with two-sample SE = 1.60 pp, z = 0.12, p = 0.90. Causal/observational estimands are accurately scoped as protocol-regime separation and ecological aggregate accounting without overclaiming paired item-level counterfactuals.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}

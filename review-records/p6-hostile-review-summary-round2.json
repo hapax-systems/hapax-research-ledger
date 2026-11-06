@@ -1,0 +1,217 @@
+{
+  "blind_p6_convergence": {
+    "HIEH-2026-0001": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+        "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+          "latency_ms": 2987.96,
+          "rationale_one_sentence": "The reported tables are sustained, but the headline +40.2 pp MATH-500 gain is explained by forward-pass-guided ablation of a rank-1 repetition pathology (a protocol-regime and decoding-pathology mechanism, with Exp 8b showing no gain on a non-looping model), which bounds the extrapolation to zero-execution weight programming of production transformers.",
+          "response_sha256": "cbd67db7b27a51a191e3c766703b2b0c5e63d60df4c286d55f02875830fd53db",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_2_BOUNDED_NARROWER_STRATUM",
+          "latency_ms": 5500.32,
+          "rationale_one_sentence": "The examination establishes that the headline transformer results are bounded and explained by non-stratum protocol mechanisms\u2014specifically a 1,572.5x parameter-scale/architecture boundary where static weight auditing had 0/4 detections on Gemma-3-270M, and 25,600 forward-pass token evaluations used to ablate a 93.0% repetition-loop decoding pathology on Qwen3.5-0.8B rather than zero-execution weight programming.",
+          "response_sha256": "6e73eaa66a9f8c1fcbc3fde93327391097a1370d61855dfbe50112cfa44ba9ef",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 7410.71,
+          "rationale_one_sentence": "The examination sustains the original experimental tables while demonstrating that the reported effects are bounded by non-stratum mechanisms\u2014specifically the forward-pass protocol regime (25,600 calibration token evaluations) and decoding pathology ablation (rank-1 repetition loop suppression)\u2014rather than zero-execution static weight programming at transformer scale.",
+          "response_sha256": "8843ba722f6add7f475c2769bf7807a0717f101e485da796b514e077a2e795e1",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0002": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+        "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+          "blind_secondary_outcome_if_any": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "latency_ms": 3244.98,
+          "rationale_one_sentence": "The examination agrees arithmetically with the reported framing gap but shows that Layer-0 probes and CoT monitors fail operational validity as standalone runtime blockers at 0.25% prevalence (FDR 80-98%), and the Layer-1 monitor sits in a writable trust boundary, which is a gating-instrument boundary mismatch; the Bayesian base-rate mechanism is secondary.",
+          "response_sha256": "6ed66c9a5f4f6d2d18f5b0016be1da4819ade49bc15cb36e06508691d16fec73",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": "OUTCOME_4_STRATUM_BOUNDARY_MISMATCH_IDENTIFIED",
+          "latency_ms": 4722.22,
+          "rationale_one_sentence": "The examination sustains OpenAI's empirical matched-pair underperformance ratios while demonstrating via a non-stratum low-prevalence Bayesian base-rate bound (p = 0.25%) that standalone runtime probe gating incurs 80.12% to 97.56% false discovery rates (OUTCOME_3), creating an operational gating instrument boundary mismatch for solo production blocking and in-workspace monitor assertions (OUTCOME_4).",
+          "response_sha256": "04683b84dacd81326bc9bebbc809629ead93afae714233364e0f5860ac991006",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_3_NON_STRATUM_EXPLANATION_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 10466.47,
+          "rationale_one_sentence": "The examination arithmetically sustains the descriptive conditional retention ratios (84.75%, 79.32%) while demonstrating that operational extrapolation of Layer-0 probes into standalone runtime blockers is bounded by low-prevalence Bayesian false-discovery inflation (FDR 80.12%-97.56% at p=0.25%) rather than by a stratum-specific causal mechanism.",
+          "response_sha256": "c609bb0d4f1c6d013d5e49006e96051fa99597fbad5fd542d701ae147d72b5dc",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0003": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 2701.77,
+          "rationale_one_sentence": "The examination reports zero scope demotions, finds Becker et al.'s randomized ITT claims and stated bounds consistent with the arithmetic checks (+19% vs -20% belief gap), and finds METR's refusal to publish naive as-treated speedups sound under the attrition sensitivity model, so the original claims stand as written.",
+          "response_sha256": "eecb19c7ede0d0a3b61e6451e5e183556d845f18f0f0fb532a2e2fd555e0736f",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 3818.07,
+          "rationale_one_sentence": "The examination explicitly sustains both METR's randomized Intention-to-Treat slowdown estimate (+19.0% within author-stated population and tool-vintage bounds with zero scope or causal-level demotions) and METR's methodological refusal to report selection-confounded per-protocol uplift under one-sided control attrition.",
+          "response_sha256": "742de3ec8c6cae860a6e50e937d91f174c83794859910dab667b8b3716560126",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_1_ORIGINAL_CLAIM_SUSTAINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 4309.25,
+          "rationale_one_sentence": "The examination verifies that METR's randomized ITT estimate (+19.0% completion-time slowdown) and the 2026-02-24 selection-bias sensitivity algebra hold within the author-stated population and tool-vintage bounds with zero scope or causal-level demotions.",
+          "response_sha256": "d975d91cdcb38b13dc0640d2165aae37bfa005e8d641bdb97aa1b391c6601eef",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    },
+    "HIEH-2026-0004": {
+      "agreeing_families_of_3": 3,
+      "expected_acceptable_set": [
+        "OUTCOME_5_UNDERDETERMINED"
+      ],
+      "quorum_converged": true,
+      "seat_classifications": [
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 2708.7,
+          "rationale_one_sentence": "The public 40% drop in classified views couples true prevalence, TPR, FPR and volume, so algebraic counterexamples (a 0% true change from FPR recalibration, or a +20% true rise from sensitivity drift) fit the disclosure equally well and the true exposure change cannot be identified from public warrant alone.",
+          "response_sha256": "c14d90dcd3107d08a0393a402e9c1ef9a0de2ed71b872ebf9be73b6a3f12048e",
+          "served_lineage": "claude-sonnet-5-5",
+          "vendor": "anthropic"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 4774.92,
+          "rationale_one_sentence": "The publicly disclosed 40% reduction in classified views couples true prevalence with uncalibrated classifier sensitivity, false-positive rates, and total feed volume in a single scalar equation, making the true change in user exposure mathematically unidentifiable from public data alone.",
+          "response_sha256": "977210ee95f1a17ee69c021c6097b0ca00d9fde7df91eabdfc31f06d63fbf058",
+          "served_lineage": "gemini-4-argon",
+          "vendor": "google"
+        },
+        {
+          "blind_primary_outcome": "OUTCOME_5_UNDERDETERMINED",
+          "blind_secondary_outcome_if_any": null,
+          "latency_ms": 4427.76,
+          "rationale_one_sentence": "The disclosed -40% classified-view statistic is a single scalar equation coupling unidentified classifier sensitivity, false-positive rate, true prevalence, and feed volume, so true user-exposure change cannot be determined from the public warrant alone.",
+          "response_sha256": "b3da8a3e519a12ae2a2b48ea4dae04184f9ca923836838342157248f7440f218",
+          "served_lineage": "mistral-large-4",
+          "vendor": "mistral"
+        }
+      ]
+    }
+  },
+  "commercial_api_families": {
+    "anthropic": "claude-sonnet-5-5",
+    "google": "gemini-4-argon",
+    "mistral": "mistral-large-4"
+  },
+  "executed_at_utc": "2026-11-06T02:22:10Z",
+  "manuscript_quorums": {
+    "HIEH-2026-0001.md": {
+      "artifact_sha256": "b810c9d1d9e5523168231fec97845a2f8b01b0cddf676d505109a4918bc46271",
+      "critical_count": 0,
+      "major_count": 0,
+      "quorum_verdict": "quorum-accept",
+      "seat_verdicts": {
+        "anthropic": "accept-with-findings",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    },
+    "HIEH-2026-0002.md": {
+      "artifact_sha256": "c377c6e46d4a43f8b499710109bc077c0335b4dc2f190dba921c01d0c6110fa0",
+      "critical_count": 0,
+      "major_count": 0,
+      "quorum_verdict": "quorum-accept",
+      "seat_verdicts": {
+        "anthropic": "accept-with-findings",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    },
+    "HIEH-2026-0003.md": {
+      "artifact_sha256": "5e587b6710916085824dea882ace911ebe1711669a32337775a7f2dfc6052ee8",
+      "critical_count": 0,
+      "major_count": 0,
+      "quorum_verdict": "quorum-accept",
+      "seat_verdicts": {
+        "anthropic": "accept-with-findings",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    },
+    "HIEH-2026-0004.md": {
+      "artifact_sha256": "7302eb2587ab87691020bbfcafc1eee4e52fad8a8985bf6b66303be529dccf4e",
+      "critical_count": 0,
+      "major_count": 0,
+      "quorum_verdict": "quorum-accept",
+      "seat_verdicts": {
+        "anthropic": "accept",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    },
+    "PUB-2026-0001.md": {
+      "artifact_sha256": "af83c03dda62b643f2fb6e718bbe08993993a05149d5f3c7611dc98d61139b4c",
+      "critical_count": 0,
+      "major_count": 0,
+      "quorum_verdict": "quorum-accept",
+      "seat_verdicts": {
+        "anthropic": "accept-with-findings",
+        "google": "accept",
+        "mistral": "accept"
+      }
+    }
+  },
+  "openai_conflict_exclusion_enforced": true,
+  "round": 2,
+  "schema_version": "HRL-P6-HOSTILE-REVIEW-ROUND2-20261106",
+  "total_api_calls": 27
+}

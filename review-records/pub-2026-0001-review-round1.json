@@ -1,0 +1,84 @@
+{
+  "accepting_families": 2,
+  "artifact": "PUB-2026-0001.md",
+  "artifact_sha256": "5ab922787b325919e0dfdd0c1f6cea4675a0466d2cdb0cb85b4641f7265b2bee",
+  "blind_p6": null,
+  "executed_at_utc": "2026-11-06T02:04:56Z",
+  "fix_first_families": 1,
+  "openai_excluded": true,
+  "quorum_verdict": "quorum-accept-with-dissent",
+  "record_id": "PUB-2026-0001",
+  "seats": [
+    {
+      "critical_findings": [
+        "Lincoln-Petersen / capture-recapture misuse: the formula P_det=(c1+c2-1)/(c1*c2) with c=(0.7795,0.3168) gives (0.0963)/(0.2469)=0.390, which is arithmetically right. But the formula is not a valid LP identity. It is applied to conditional catch shares among blocked panels, which are not independent per-seat detection probabilities. Calling 61% an 'independent two-seat joint-miss bound' is an overclaim. The claim that the 41:1 discordant odds ratio is 'algebraically invariant to zero-truncation' is asserted, not shown. A discordant-pair ratio is not an odds ratio, and the (0,0) cells are not recoverable.",
+        "Pre-transition numbers contradict the Study 1 narrative. The pre-period Claude sec block rate is 28.00% (21/75), and the post-period Claude rate is 9.95%. The manuscript attributes the drop to outage-degraded panels but offers no evidence for this, such as stratification by outage status. The headline CMH p=0.000443 is therefore confounded by period and panel composition. The L0 summary calls it arising 'from an indistinguishable pre-transition baseline' while the pre-post interaction is non-significant (p=0.1026), so the differential-change claim is unsupported. The headline estimand is overclaimed.",
+        "Study 2 headline 100% (40/40) 'audit accuracy' with Wilson LB 91.24% is presented as evidence of containment. But the two-of-three quorum uses mistral, which has truncation failures, and the 40 items are 20 pairs counted across N and S arms, not independent. The Wilson interval treats them as independent, so it is overstated. The L0 summary omits that the 40 'trials' are paired framings of the same 20 diffs.",
+        "Internal inconsistencies in the Study 2 audit design and arithmetic. The text says 'vulnerable F7 and hardened safe F8' with 20 each, yet the table reports a Claude solo F8 false block of 10.0% (2/20) in both arms, and the non-truncated pool shows 'Solo F8 FP 5.0%'. The 'all-3-vendor pool 480 pairs' discordants are (6,16). The sum 0+6+0 for N-only is correct, but S-only is 2+2+12=16, and the 'non-truncated' (6,4) is inconsistent with the per-vendor (0,2)+(6,2)=(6,4), which is fine. However, the mistral cause attribution ('entirely' due to truncation) is overclaimed: the reasoning-token difference is shown only as correlation, and 'prove' is too strong.",
+        "Governance clause deviation: the verbatim two-sentence hrl-han release record check is altered and expanded across several sentences rather than reproduced verbatim. The correction-intake paragraph adds claims about automated RFC 3834 replies pending deployment. The mandatory legal-entity filing line is reformatted: 'Legal entity (as filed): Hapax Research LLC, organized in Wyoming on 2026-05-10, filing ID 2026-001973400' may not match the required verbatim string.",
+        "Scope-honesty gap: the 'What this does NOT establish' box is dense, mixes statistics with disclaimers, and omits key limits: no randomization of Study 1 assignment, a single-organization system, lane-assignment confounding by task, and vendor-model reviewer self-preference."
+      ],
+      "hygiene_audit_summary": "A16 attribution, the provisional state, licenses, the no-copyright line, and the process-not-truth disclaimer are present. The release-record check and legal-entity lines are paraphrased or reformatted rather than verbatim. The correction intake contains the required commitment sentences but adds extra claims. No personal names, /home/ paths or internal IPs were found. Heavy unexpanded jargon remains.",
+      "input_tokens": 10591,
+      "latency_ms": 26267.9,
+      "major_findings": [
+        "The Study 2 power claim assumes 5% discordant incidence without justification, and MDE 4.95 pp is a design parameter, not an equivalence test. The text says 'ruling out >=5 pp' from a point estimate without a CI on the paired difference.",
+        "The 40.33% outage fraction (619/1535) is used to explain the drop but is not analyzed as a covariate.",
+        "The Woolf homogeneity test and MH OR increasing after stratification (Simpson reversal) is plausible, but the stated mechanism ('smaller diffs carry lower rejection risk') is untested.",
+        "Unexpanded internal jargon (U12, A16, e-FORM, HIEH, Divergence B, Launch Slate, 'dossier', 'lanes') makes the text hard to audit.",
+        "Release date 2026-11-06 with provisional state is fine, but the cold-reader check is pending and the claim 'vendor-excluded hostile-reader review complete' is unverifiable."
+      ],
+      "minor_notes": [
+        "The abstract-level L0 paragraph is very dense, with too many numbers.",
+        "Zero (c) claim is present. No personal names or /home/ paths found.",
+        "Wilson upper bound 0.40% for 0/960 is correct (3.84/964=0.40%).",
+        "The 79.32% figure (4.68/5.90) is correct arithmetic.",
+        "The GitHub org URL is public, which is acceptable."
+      ],
+      "output_tokens": 2060,
+      "reasoning_tokens": 0,
+      "requested_model": "claude-sonnet-5-5",
+      "response_sha256": "f369077e5708d09b9be778788d65c361782e03f362fad728f829f81e557eb68c",
+      "served_lineage": "claude-sonnet-5-5",
+      "statistical_audit_summary": "Most reported arithmetic reproduces: the Wilson bound for 0/960, the 4.68/5.90 ratio, the LP arithmetic and the McNemar exact values. Estimand and inference problems remain. The Lincoln-Petersen use is invalid for conditional catch shares. The 40/40 accuracy treats paired framings as independent. The cross-lineage CMH is confounded by period and outage panel composition, and the interaction is non-significant. The mistral mechanism is overclaimed as proven, and the 'ruling out' language is not an equivalence test.",
+      "vendor": "anthropic",
+      "verdict": "fix-first"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All canonical governance, epistemic fairness, and OPSEC hygiene gates pass with zero defects. The manuscript carries the provisional state marker, complete A16 attribution quartet (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0, and zero copyright claim under 88 FR 16190), verbatim Wyoming legal-entity filing string (filing ID 2026-001973400), prominent non-defensive scope ceiling ('What this does NOT establish:'), zero anthropomorphic intent attribution, honest public correction intake commitment without fabricated response-time SLAs, and the verbatim two-sentence outside release record check and process-not-truth disclaimer. Zero personal names, local filesystem paths, internal hostnames, private repository links, or commercial CTAs are present.",
+      "input_tokens": 8311,
+      "latency_ms": 15532.01,
+      "major_findings": [],
+      "minor_notes": [
+        "In Study 1 ('Cohort Structure and Estimand Separation'), the security/governance subset totals 116 pre-transition dossiers plus 396 post-transition dossiers (512 GPT/Claude dossiers) out of the 532 total security/governance dossiers across the cohort; the remaining 20 dossiers correspond to non-quorum halts or non-GPT/Claude lanes. While fully accounted for in the companion CSV/JSON strata artifacts, noting this 512 vs. 532 partition parenthetically in a future revision would further aid rapid table reconciliation."
+      ],
+      "output_tokens": 1136,
+      "reasoning_tokens": 0,
+      "requested_model": "gemini-4-argon",
+      "response_sha256": "3f5952d6436381ba0bba6feb56a93b3dff4dc89457d0121560b86426cce92981",
+      "served_lineage": "gemini-4-argon",
+      "statistical_audit_summary": "All contingency tables, odds ratios, Cochran-Mantel-Haenszel (CMH) stratified tests, Woolf homogeneity tests, Ratio-of-Odds-Ratios (ROR) two-period interactions, exact binomial McNemar paired tests, Wilson score 95% confidence intervals, and two-seat Lincoln-Petersen zero-truncated capture-recapture identities were independently recomputed and verified to exact agreement with the reported figures. Specifically: (1) Pre-transition security OR = (12*54)/(29*21) = 1.064 (Fisher p = 1.0000) and non-security OR = (25*183)/(107*42) = 1.018 (Fisher p = 1.0000); (2) Post-transition security unstratified OR = (42*181)/(153*20) = 2.484 (Pearson chi2 = 10.065, p = 0.001511; Fisher p = 0.002157); (3) Size-stratified post-transition security strata S (OR = 4.778), M (OR = 2.293), and L (OR = 3.353) yield common OR_MH = 2.952, continuity-corrected CMH chi2 = 12.344 (p = 0.000443), and Woolf Q = 0.557 (p = 0.7568); (4) Unstratified two-period security ROR = 2.4843 / 1.0640 = 2.335 (z = 1.632, p = 0.1026) is transparently distinguished from both the post-transition cross-lineage divergence and the GPT CLI reviewer bare-accept interaction (+19.74 pp, ROR = 3.203, z = 3.380, p = 0.000724); (5) Paired discordant reviewer blocks (41:1) yield continuity-corrected McNemar chi2 = 36.214 and exact binomial p = 1.955e-11, and the Lincoln-Petersen identity at (0.7795, 0.3168) yields P_det = 39.00% (61.00% joint-miss bound); (6) Study 2 Wilson 95% intervals, MDE_80 = 4.95 pp power floor, and exact two-sided McNemar p-values (0.500000 for Claude, 0.289062 for Gemini, 0.000488 for Mistral, 0.753906 for the 320-pair non-truncated pool, and 0.052479 for the 480-pair all-vendor pool) are mathematically exact.",
+      "vendor": "google",
+      "verdict": "accept"
+    },
+    {
+      "critical_findings": [],
+      "hygiene_audit_summary": "All mandatory governance elements present and verbatim: '\u25c7 provisional' release state; full A16 quartet (Hapax Research Lab, hrl-han, e-FORM, CC BY 4.0 / CC0 1.0, zero copyright claim with 88 FR 16190); Wyoming legal-entity line with filing ID 2026-001973400; honest correction intake including the exact sentences 'The network commits to receipt, retention and published correction. It promises no response time.'; and the two-sentence hrl-han outside release record check plus the process-not-truth disclaimer ('This label records how the text was made; it does not certify that the text is true...'). 'What this does NOT establish' is prominent, comprehensive (observational-not-RCT, n = 116 pre-cohort, ROR vs CMH distinction, CDE vs TE, MDE floor, vendor exclusion), and non-defensive; examined authors/vendors are described neutrally; zero anthropomorphic intent is attributed to any model. OPSEC scan clean: no personal human names, no /home/ paths, no hostnames/IPs, no hapax-council private URLs, no [commercial-cta-path] CTAs; only public GitHub ledger URLs and the canonical hrl-han@hapaxresearch.com correction contact appear.",
+      "input_tokens": 7330,
+      "latency_ms": 28933.24,
+      "major_findings": [],
+      "minor_notes": [
+        "The acronym 'HAN' in 'HAN-Initiated Epistemic Hardening (HIEH)' is not explicitly expanded in-text (only 'hrl-han research network' is given); expanding it once would remove residual internal jargon, though context makes the referent unambiguous."
+      ],
+      "output_tokens": 959,
+      "reasoning_tokens": 3858,
+      "requested_model": "mistral-large-4",
+      "response_sha256": "4a21f2e59c35c959391d5a58ce166b966f03048e2c7092832927537fe5dda0d0",
+      "served_lineage": "mistral-large-4",
+      "statistical_audit_summary": "All quantitative claims independently recomputed and verified: pre-transition ORs (1.064 sec, 1.018 nonsec) and Fisher p = 1.0; post-transition unstratified OR = 2.484 (42x181 / 153x20) with Pearson chi2 = 10.065; stratum ORs 4.778 / 2.293 / 3.353 reproduce exactly from the 2x2 cells; OR_MH = 2.952 with CMH chi2_cc = 12.344 (p = 0.000443) is internally consistent; two-period ROR = 2.484/1.064 = 2.335 (p = 0.1026) correctly reported as non-significant and distinct from the CMH divergence; reviewer DiD = (24.84-15.38) - (19.11-29.39) = +19.74 pp with ROR = 3.203; continuity-corrected McNemar chi2 = 39^2/42 = 36.21 for the 41:1 discordance (exact p = 1.955e-11); exact McNemar p = 0.000488 for (0,12), p = 0.753906 for (6,4), p = 0.052479 for (6,16) all reproduce from binomial tails; Wilson bounds verified (0/960 UB = 3.8416/963.84 = 0.40%; 0/320 = 1.19%; 0/160 = 2.34%; 40/40 LB = 40/43.8416 = 91.24%); Lincoln-Petersen P_det = (0.7795+0.3168-1)/(0.7795x0.3168) = 39.00% with 61.00% joint-miss bound; Zhipu GLM risk ratio 5.73/1.48 = 3.87x with Fisher p = 0.005754 plausible. Estimands are rigorously separated (CDE vs TE, ROR vs CMH, conditional zero-truncated catch rates vs truncation-invariant discordant odds), the MDE_80 = 4.95 pp power floor is disclosed, and no causal or mentalistic overclaim is present.",
+      "vendor": "mistral",
+      "verdict": "accept"
+    }
+  ]
+}
