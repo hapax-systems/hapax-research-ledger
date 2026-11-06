@@ -1,14 +1,14 @@
 {
   "title": "hapax-research-ledger",
-  "description": "Public-domain numeric evidence ledger for the Hapax research program. Numeric and evidence-oriented, not runtime code.",
+  "description": "Public-domain numeric evidence ledger for Hapax Research Lab's research program: append-only records, controlled vocabularies, hashes, caveats. Data, not runtime code.",
   "creators": [
     {
-      "name": "Hapax Systems"
+      "name": "Hapax Research Lab"
     }
   ],
   "license": "CC0-1.0",
   "access_right": "open",
-  "upload_type": "software",
+  "upload_type": "dataset",
   "keywords": [
     "research-software",
     "evidence",
@@ -16,8 +16,13 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/hapax-systems/hapax-council",
+      "identifier": "https://hapaxresearch.com",
       "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/hapax-systems/hapax-constitution",
+      "relation": "isPartOf",
       "scheme": "url"
     }
   ]

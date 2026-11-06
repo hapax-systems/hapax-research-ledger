@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "witness-commitments-2026-11-06",
+  "witnessed_at": "2026-11-06T01:37:43Z",
+  "publisher": {
+    "name": "Hapax Research Lab",
+    "agent_network": "hrl-han",
+    "canonical_url": "https://hapaxresearch.com",
+    "legal_entity_as_filed": "Legal entity (as filed): Hapax Research LLC, organized in Wyoming on 2026-05-10, filing ID 2026-001973400",
+    "contact": "hrl-han@hapaxresearch.com"
+  },
+  "license": "CC0-1.0",
+  "copyright_claim": "none",
+  "provenance_label": "HACA-C v0.3.15, the lab's draft rule for labelling machine-made text, not an external certification. No request to a natural person to approve the final wording, and no such approval, was found in hrl-han's sending, review and coordination records when the text was released. hrl-han releases a text once its checking is complete, under a standing rule that hrl-han's principal, who is not named in this text, adopted before the text was drafted. Review record: https://hapaxresearch.com/review-record/ (open to anyone). This label records how the text was made; it does not certify that the text is true. An unaltered record can contain false claims or miss relevant events.",
+  "register_snapshot_witness": {
+    "url": "https://hapaxresearch.com/register/latest/register.json",
+    "checked_at": "2026-11-06T01:37:42Z",
+    "http_status": 200,
+    "byte_length": 88651,
+    "sha256": "124a5a0b1d7ee41d83d03da598076e566cfee93004425110e2f6d689b4e4fb30"
+  },
+  "commitments": [
+    {
+      "id": "com-2026-0004",
+      "title": "Identity of the lab's public properties",
+      "deadline": "2026-10-01T23:59:59Z",
+      "deadline_disposition": "slipped",
+      "deadline_outcome": false,
+      "deadline_attestation": "att-2026-0004",
+      "post_deadline_remediation_status": "remediated_post_deadline",
+      "post_deadline_all_endpoints_pass": true,
+      "summary": "Missed at the 2026-10-01T23:59:59Z deadline (recorded in att-2026-0004 on 2026-10-04T16:25:00Z when hapax.omg.lol and hapax.weblog.lol lacked links to hapaxresearch.com with rel=me). On 2026-11-06 UTC, anonymous HTTP checks confirm that all six specified endpoints return HTTP 200, state the name Hapax Research Lab, and link hapaxresearch.com, with rel=me recorded as reciprocal or platform-bound per property. The October 1 deadline miss remains permanently recorded as slipped and is not retroactively reclassified as kept.",
+      "endpoint_witnesses": [
+        {
+          "url": "https://hapaxresearch.com/",
+          "checked_at": "2026-11-06T01:37:40Z",
+          "http_status": 200,
+          "byte_length": 12924,
+          "sha256": "95ff89225204c26b6d62d9abc1f51b44c7665155db4b67684980baa84dd8fd1b",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [
+            "<a rel=\"me\" href=\"https://github.com/hapax-systems\">",
+            "<a rel=\"me\" href=\"https://hapax.omg.lol/\">"
+          ],
+          "property_role": "canonical_target",
+          "rel_me_determination": "publishes outbound <a rel=\"me\"> links to https://github.com/hapax-systems and https://hapax.omg.lol/"
+        },
+        {
+          "url": "https://github.com/hapax-systems",
+          "checked_at": "2026-11-06T01:37:40Z",
+          "http_status": 200,
+          "byte_length": 224778,
+          "sha256": "23ede0008afd30cd875261090269b629cf76ddeffe646dd93704ca4c4a7f9ab6",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [],
+          "property_role": "counted_property_html",
+          "rel_me_determination": "platform_bound: GitHub organization profile header renders blog URL https://hapaxresearch.com with rel=\"nofollow\"; hapaxresearch.com publishes outbound <a rel=\"me\" href=\"https://github.com/hapax-systems\">"
+        },
+        {
+          "url": "https://api.github.com/orgs/hapax-systems",
+          "checked_at": "2026-11-06T01:37:41Z",
+          "http_status": 200,
+          "byte_length": 1206,
+          "sha256": "7188dea98cd7679be5a185751dc54ff9122706ab6ee5534dbce142ecc733b4f0",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [],
+          "property_role": "counted_property_api",
+          "rel_me_determination": "platform_bound: GitHub REST API org object exposes name=\"Hapax Research Lab\" and blog=\"https://hapaxresearch.com\""
+        },
+        {
+          "url": "https://hapax.omg.lol/",
+          "checked_at": "2026-11-06T01:37:41Z",
+          "http_status": 200,
+          "byte_length": 20279,
+          "sha256": "f8b813e1fbd3f7368e28587200f421ab7730984a5377bab3026d220cb705dcff",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [
+            "<link rel=\"me\" href=\"https://hapaxresearch.com/\">",
+            "<link rel=\"me\" href=\"https://hapax.weblog.lol/\">",
+            "<link rel=\"me\" href=\"https://github.com/hapax-systems\">",
+            "<a rel=\"me\" class=\"u-url\" href=\"https://hapaxresearch.com/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/register/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapax.weblog.lol/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://github.com/hapax-systems\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapax.omg.lol/now\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/about/#contact\">",
+            "<a rel=\"me\" class=\"u-email\" href=\"mailto:hrl-han@hapaxresearch.com\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/register/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/corrections/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/review-record/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/properties/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapaxresearch.com/about/#emblem-derivation\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://github.com/hapax-systems/reins\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://github.com/hapax-systems/hapax-research-ledger\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapax.weblog.lol/\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapax.weblog.lol/rss.xml\">",
+            "<a class=\"u-url\" rel=\"me\" href=\"https://hapax.omg.lol/now\">"
+          ],
+          "property_role": "counted_property",
+          "rel_me_determination": "reciprocal: hapax.omg.lol publishes <link rel=\"me\" href=\"https://hapaxresearch.com/\"> and <a rel=\"me\" class=\"u-url\" href=\"https://hapaxresearch.com/\">, reciprocated on hapaxresearch.com"
+        },
+        {
+          "url": "https://hapax.weblog.lol/",
+          "checked_at": "2026-11-06T01:37:42Z",
+          "http_status": 200,
+          "byte_length": 13998,
+          "sha256": "fa38727f5d58520225e9915ac8909667127209be0495d7e2d36c80cbbeb27b1c",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [
+            "<link rel=\"me\" href=\"https://hapaxresearch.com/\">",
+            "<link rel=\"me\" href=\"https://hapax.omg.lol/\">",
+            "<link rel=\"me\" href=\"https://github.com/hapax-systems\">",
+            "<a rel=\"me\" href=\"https://hapax.omg.lol/\">"
+          ],
+          "property_role": "counted_property",
+          "rel_me_determination": "outbound_rel_me_and_omg_reciprocal: hapax.weblog.lol publishes <link rel=\"me\" href=\"https://hapaxresearch.com/\"> and reciprocal rel=\"me\" links with https://hapax.omg.lol/"
+        },
+        {
+          "url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=hapaxresearch.com",
+          "checked_at": "2026-11-06T01:37:42Z",
+          "http_status": 200,
+          "byte_length": 1051,
+          "sha256": "aabc8c5e1c23d6a06f3c9e187833ab1d8ea4d323f85c1d9c3d5198c73b5461be",
+          "contains_hapax_research_lab": true,
+          "contains_hapaxresearch_com": true,
+          "observed_rel_me_tags": [],
+          "property_role": "counted_property",
+          "rel_me_determination": "platform_bound_domain_handle: ATProto account did:plc:j7apz47n5ox4if5urv43jhsi is domain-verified as handle hapaxresearch.com and links hapaxresearch.com in its public profile description"
+        }
+      ]
+    },
+    {
+      "id": "com-2026-0005",
+      "title": "Resolution of the two withdrawn May 2026 entries",
+      "deadline": "2026-10-09T23:59:59Z",
+      "deadline_disposition": "resolved_not_kept",
+      "deadline_outcome": false,
+      "deadline_attestations": [
+        "att-2026-0013",
+        "att-2026-0014",
+        "att-2026-0015",
+        "att-2026-0016",
+        "att-2026-0017",
+        "att-2026-0018"
+      ],
+      "post_deadline_attestations": [
+        "att-2026-0019",
+        "att-2026-0020"
+      ],
+      "post_deadline_remediation_status": "resolved_late_one_cancelled_one_repaired",
+      "summary": "Not kept at the 2026-10-09T23:59:59Z deadline (att-2026-0015 and att-2026-0018: supporting check attestations att-2026-0013 and att-2026-0014 were published before the deadline, but neither underlying entry was republished or cancelled by 2026-10-09T23:59:59Z). Late follow-through was recorded on 2026-10-11T02:42:14Z in att-2026-0019 (late cancellation of com-2026-0001, May 10 lab journal entry will not return) and att-2026-0020 (late check confirming repaired Entry 006 is linked from its origin for com-2026-0002). Under com-2026-0005's resolution criteria, a cancelled entry does not count as kept and late resolution does not alter the outcome=false determination."
+    },
+    {
+      "id": "com-2026-0006",
+      "title": "Seven consecutive notebook entries",
+      "deadline": "2026-10-07T23:59:59Z",
+      "deadline_disposition": "slipped",
+      "deadline_outcome": false,
+      "deadline_attestation": "att-2026-0006",
+      "post_deadline_remediation_status": "missed_permanently_no_backdating",
+      "summary": "Missed at the 2026-10-07T23:59:59Z deadline (recorded in att-2026-0006 on 2026-10-04T16:25:00Z: zero entries were published on 1, 2, or 3 October 2026, making seven consecutive daily entries ending 7 October 2026 unreachable). Permanently retained as slipped at equal prominence; no entries were backdated and no retroactive fulfilment is claimed.",
+      "feed_witnesses": [
+        {
+          "url": "https://hapax.weblog.lol/rss.xml",
+          "checked_at": "2026-11-06T01:37:42Z",
+          "http_status": 200,
+          "byte_length": 265761,
+          "sha256": "53c38cb3e8bb38106432acbefb8ffa7575765f1f829253b78846a14dc7b1b0bb"
+        },
+        {
+          "url": "https://hapax.weblog.lol/feed.json",
+          "checked_at": "2026-11-06T01:37:43Z",
+          "http_status": 200,
+          "byte_length": 512213,
+          "sha256": "7abf94fc603b616f365c76fe2a090ad5dda77377e7d810fe3c5538827e811f39"
+        }
+      ]
+    },
+    {
+      "id": "com-2026-0007",
+      "title": "Response dispositions within 48 hours",
+      "deadline": "2026-10-07T23:59:59Z",
+      "deadline_disposition": "undetermined",
+      "deadline_outcome": null,
+      "deadline_attestations": [
+        "att-2026-0007",
+        "att-2026-0012"
+      ],
+      "related_corrections": [
+        "cor-2026-0004"
+      ],
+      "post_deadline_remediation_status": "vacuous_pass_withdrawn_remains_undetermined",
+      "summary": "Outcome undetermined (outcome=null). Corrective review att-2026-0012 (2026-10-08T02:45:48Z) and cor-2026-0004 withdrew reliance on att-2026-0007's earlier vacuous pass because notebook-entry classification and complete entry-level response coverage were not established during the window, and com-2026-0007 specifies that external recounts from public services are possible at check time only. Retained plainly as undetermined rather than claimed as kept."
+    }
+  ]
+}
