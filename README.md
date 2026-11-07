@@ -56,6 +56,10 @@ validity gates, and current review evidence. Do not cite a row here as a stable
 estimate or product claim unless the row and its surrounding metadata say that
 claim has cleared.
 
+## Corrections
+
+**2026-11-06 — Launch Slate 1:** Named-model review assurance is **UNVERIFIED**; the five substantive findings remain under revision/review. Read the [canonical provenance erratum](review-records/ERRATUM-20261106.md) before relying on the historical review or release-state claims. No new review or scientific validation is claimed.
+
 ## Current Series
 
 The current series tracks a changing-criterion single-case experimental design
@@ -82,7 +86,7 @@ Important caveats:
 | `publications/pub-2026-0001/` | Launch Slate 1 governance monograph (`PUB-2026-0001`), `CC0-1.0` datasets, and stdlib reproducer. | Lets readers re-run all Study 1 (`N = 1,535`) and Study 2 (`N = 960`) statistical assertions from sanitized raw records. |
 | `examinations/` | Launch Slate 1 `HIEH` public claim examinations (`HIEH-2026-0001..0004`), `1200x675` SVG plates, sidecars, and witness script. | Lets readers audit `Kategoria v2.0` outcome bounds, `25.00%` `OUTCOME_1` symmetry, and deterministic algebraic witnesses. |
 | `di-01-records/` | Discourse-restraint and conflict-of-interest records (`DI-01-LAUNCH-SLATE-1`). | Documents read-only social posture, vendor conflict exclusions, and arrival-retention commitments. |
-| `review-records/` | Two-round 3-family commercial API blind `P6` and adversarial review transcripts plus armed gate receipt. | Exposes Round-1 defect catches, Round-2 zero-critical/zero-major quorums, and conflict exclusions. |
+| `review-records/` | Historical review transcripts, gate receipt, and dated provenance erratum. | Preserves reported findings; named-model assurance is UNVERIFIED and old quorum labels are not current acceptance. |
 | `SHA256SUMS.txt` | Content-addressed `SHA-256` manifest for all Launch Slate 1 files. | Lets external verifiers check exact byte integrity across mirrors. |
 
 Every SCED observation in `dv-ledger.ndjson` is numeric, boolean, timestamp,
