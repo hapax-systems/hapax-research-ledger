@@ -113,5 +113,5 @@ not license Hapax Research Lab runtime code, Reins, or internal apparatus.
   - `examinations/hieh-2026-0002/HIEH-2026-0002.md`: `13,562` B, `sha256: c377c6e46d4a43f8b499710109bc077c0335b4dc2f190dba921c01d0c6110fa0`
   - `examinations/hieh-2026-0003/HIEH-2026-0003.md`: `14,045` B, `sha256: 5e587b6710916085824dea882ace911ebe1711669a32337775a7f2dfc6052ee8`
   - `examinations/hieh-2026-0004/HIEH-2026-0004.md`: `13,055` B, `sha256: 7302eb2587ab87691020bbfcafc1eee4e52fad8a8985bf6b66303be529dccf4e`
-  - **Published:** `2026-11-06T02:27:28Z` · **Nonconformance detected (`20261108T231525Z`):** `2026-11-08T23:15:25Z` · **Corrected:** `2026-11-10T05:25:00Z` · **Latency:** `30 h 09 m 35 s` (`30.16 h`) from detection (`74 h 57 m 32 s` / `74.96 h` from publication).
+  - **Published:** `2026-11-06T02:27:28Z` · **Nonconformance detected (`20261108T231525Z`):** `2026-11-08T23:15:25Z` · **Corrected:** `2026-11-10T05:25:00Z` · **Latency:** `30 h 09 m 35 s` (`30.16 h`) from detection (`98 h 57 m 32 s` / `98.96 h` from publication).
   - **Zero new claims:** See [`examinations/NOT-ISSUED-AND-WITHDRAWAL-NOTICE-20261110.md`](examinations/NOT-ISSUED-AND-WITHDRAWAL-NOTICE-20261110.md).

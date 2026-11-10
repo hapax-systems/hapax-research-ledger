@@ -5,7 +5,7 @@
 - **Preimage Commit:** `fbef61945b7acb0c14a4635243e80e89b7a28feb` (`2026-11-06T02:27:28Z`)
 - **Nonconformance Detection Timestamp:** `2026-11-08T23:15:25Z` (`20261108T231525Z` determination record)
 - **Correction Timestamp:** `2026-11-10T05:25:00Z`
-- **Correction Latency:** `30 h 09 m 35 s` (`30.16 h`) from the `2026-11-08T23:15:25Z` nonconformance determination (`74 h 57 m 32 s` / `74.96 h` from the `2026-11-06T02:27:28Z` commit `fbef61945b7acb0c14a4635243e80e89b7a28feb`)
+- **Correction Latency:** `30 h 09 m 35 s` (`30.16 h`) from the `2026-11-08T23:15:25Z` nonconformance determination (`98 h 57 m 32 s` / `98.96 h` from the `2026-11-06T02:27:28Z` commit `fbef61945b7acb0c14a4635243e80e89b7a28feb`)
 
 ---
 
